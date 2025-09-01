@@ -4361,6 +4361,36 @@
 			"response": []
 		},
 		{
+			"name": "Get All General Security Plan Copy",
+			"id": "3687173-7e50bcb2-6595-4e2c-a89b-05a9dc735764",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "SessionID",
+						"value": "{{SessionID}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{Hostname}}/aspectucc/api/v1/generalsecurityplan",
+					"host": [
+						"{{Hostname}}"
+					],
+					"path": [
+						"aspectucc",
+						"api",
+						"v1",
+						"generalsecurityplan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "xml create acd service ok",
 			"id": "3687173-d78e48db-b413-4936-aa77-e5e4de85ebcb",
 			"protocolProfileBehavior": {
