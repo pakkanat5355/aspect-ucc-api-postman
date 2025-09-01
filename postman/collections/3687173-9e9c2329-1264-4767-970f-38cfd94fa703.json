@@ -2912,6 +2912,51 @@
 			"response": []
 		},
 		{
+			"name": "Update User Copy",
+			"id": "3687173-011ec3fa-10ac-49ba-85ff-648f8e8712ef",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "SessionID",
+						"value": "{{SessionID}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ldapUserID\": null,\r\n    \"userId\": \"UAT46\",\r\n    \"userFullName\": \"UAT46 - LUAT46, UAT46 LUAT46\",\r\n    \"userFName\": \"UAT46 LUAT46\",\r\n    \"userLName\": \"LUAT46\",\r\n    \"workgroupId\": \"5c5b90f0-cdbc-44d3-abfd-24db0ca73768\",\r\n    \"workgroup\": \"ADMIN\",\r\n    \"isAgent\": true,\r\n    \"isDirector\": true,\r\n    \"isManualAccept\": 0,\r\n    \"isGoNotReadyIfReject\": 0,\r\n    \"isEnterNotReadyState\": 0,\r\n    \"notReadyTimeoutSec\": 0,\r\n    \"skillAgents\": [\r\n        {\r\n            \"id\": \"4\",\r\n            \"name\": \"Test Skill\",\r\n            \"levelId\": 16.0,\r\n            \"editMode\": \"Update\"\r\n        }\r\n    ],\r\n    \"serviceUsers\": [\r\n        {\r\n            \"serviceId\": \"1\",\r\n            \"serviceC\": \"INB0111\",\r\n            \"serviceType\": \"[Resource]STYPE_Inbound\",\r\n            \"editMode\": \"Update\"\r\n        },\r\n        {\r\n            \"serviceId\": \"57\",\r\n            \"serviceC\": \"AODFeed_Ahpoz\",\r\n            \"serviceType\": \"[Resource]STYPE_Outbound\",\r\n            \"editMode\": \"Update\"\r\n        }\r\n    ],\r\n    \"directorInformation\": {\r\n        \"defaultServiceSecurityPlanID\": \"12427916-6865-44bd-b795-614998420b36\",\r\n        \"defaultServiceSecurityPlanDesc\": \"No Access - Service\",\r\n        \"GeneralSecurityPlanID\": \"09d8b04d-040a-44f4-b2bb-fb771f84b073\",\r\n        \"GeneralSecurityPlanDesc\": \"No Access - General\",\r\n        \"ServiceCreationSecurityPlanID\": \"12427916-6865-44bd-b795-614998420b36\",\r\n        \"ServiceCreationSecurityPlanDesc\": \"No Access - Service\",\r\n        \"serviceSecurityPlans\": [\r\n            {\r\n                \"serviceId\": \"05b5e0e3-deea-47f3-b649-e9029cc3d7c5\",\r\n                \"serviceSyntheticId\": \"AODFeed_Ahpoz\",\r\n                \"serviceC\": \"AODFeed_Ahpoz\",\r\n                \"securityPlanID\": \"6\",\r\n                \"securityPlanDesc\": \"Supervisor_SSP\",\r\n                \"editMode\": \"Insert\"\r\n            }\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Hostname}}/aspectucc/api/v1/user?userId=uat46",
+					"host": [
+						"{{Hostname}}"
+					],
+					"path": [
+						"aspectucc",
+						"api",
+						"v1",
+						"user"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "uat46"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Get Schedule",
 			"id": "3687173-95df2d2e-4a15-47ca-ada1-46ca9d27d241",
 			"protocolProfileBehavior": {
