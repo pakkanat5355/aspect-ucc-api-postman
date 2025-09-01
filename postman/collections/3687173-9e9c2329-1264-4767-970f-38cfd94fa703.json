@@ -3008,7 +3008,7 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "PUT",
+				"method": "POST",
 				"header": [
 					{
 						"key": "SessionID",
@@ -3026,7 +3026,7 @@
 					}
 				},
 				"url": {
-					"raw": "{{Hostname}}/aspectucc/api/v1/user?userId=uat46",
+					"raw": "{{Hostname}}/aspectucc/api/v1/user",
 					"host": [
 						"{{Hostname}}"
 					],
@@ -3035,12 +3035,6 @@
 						"api",
 						"v1",
 						"user"
-					],
-					"query": [
-						{
-							"key": "userId",
-							"value": "uat46"
-						}
 					]
 				}
 			},
