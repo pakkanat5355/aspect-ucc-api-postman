@@ -2867,6 +2867,125 @@
 			]
 		},
 		{
+			"name": "Get User Copy",
+			"id": "3687173-dc0e5756-5992-4e27-b763-4cca51421836",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "SessionID",
+						"value": "{{SessionID}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{Hostname}}/aspectucc/api/v1/user?userId=uat46",
+					"host": [
+						"{{Hostname}}"
+					],
+					"path": [
+						"aspectucc",
+						"api",
+						"v1",
+						"user"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "uat46"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "3687173-b9bc527f-8e62-4833-bc8c-7b936f17ed4e",
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "SessionID",
+								"value": "{0584c333-6f74-40a3-a1a4-b2bf01187b53}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:50959/aspectucc/api/v1/schedule?scheduleId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "50959",
+							"path": [
+								"aspectucc",
+								"api",
+								"v1",
+								"schedule"
+							],
+							"query": [
+								{
+									"key": "scheduleId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?RDpcVFJCX1NvdXJjZV9Db2RlXEFzcGVjdC1FbmhhbmNlbWVudFxBc3BlY3QtVUNDLVdlYkFQSVxBc3BlY3QtVUNDLVdlYkFQSVxhc3BlY3R1Y2NcYXBpXHYxXHVzZXI=?="
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 14 Apr 2025 16:31:32 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1765"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"isSuccess\": true,\n    \"message\": null,\n    \"executeTimeMs\": 173,\n    \"result\": [\n        {\n            \"ldapUserID\": null,\n            \"userId\": \"adminp01\",\n            \"userFullName\": \"adminp01 - adminp01, adminp01\",\n            \"userFName\": \"adminp01\",\n            \"userLName\": \"adminp01\",\n            \"workgroupId\": \"1aa24648-d4dc-4989-811a-007f3efaff4a\",\n            \"workgroup\": \"Demo\",\n            \"isAgent\": false,\n            \"isDirector\": false,\n            \"isManualAccept\": 0,\n            \"isGoNotReadyIfReject\": 0,\n            \"isEnterNotReadyState\": 0,\n            \"notReadyTimeoutSec\": 0,\n            \"skillAgents\": [\n                {\n                    \"id\": \"4\",\n                    \"name\": \"Test Skill\",\n                    \"levelId\": 16\n                }\n            ],\n            \"serviceUsers\": [\n                {\n                    \"serviceId\": \"122\",\n                    \"serviceC\": \"NTL_SAS_PILOT\",\n                    \"serviceType\": \"[Resource]STYPE_Outbound\"\n                },\n                {\n                    \"serviceId\": \"123\",\n                    \"serviceC\": \"NTL_SAS_PILOT_INB\",\n                    \"serviceType\": \"[Resource]STYPE_Inbound\"\n                },\n                {\n                    \"serviceId\": \"128\",\n                    \"serviceC\": \"THAIPAIBOON_OB\",\n                    \"serviceType\": \"[Resource]STYPE_Outbound\"\n                },\n                {\n                    \"serviceId\": \"132\",\n                    \"serviceC\": \"NTL_SAS_LOAN\",\n                    \"serviceType\": \"[Resource]STYPE_Outbound\"\n                },\n                {\n                    \"serviceId\": \"134\",\n                    \"serviceC\": \"LMG_OB\",\n                    \"serviceType\": \"[Resource]STYPE_Outbound\"\n                },\n                {\n                    \"serviceId\": \"136\",\n                    \"serviceC\": \"NTL_Hotlead_loan\",\n                    \"serviceType\": \"[Resource]STYPE_Outbound\"\n                },\n                {\n                    \"serviceId\": \"144\",\n                    \"serviceC\": \"NTL_SAS_INSURE_TRICKLE\",\n                    \"serviceType\": \"[Resource]STYPE_Outbound\"\n                },\n                {\n                    \"serviceId\": \"147\",\n                    \"serviceC\": \"MTI_OB_MAUNAL\",\n                    \"serviceType\": \"[Resource]STYPE_Outbound\"\n                }\n            ],\n            \"directorInformation\": {\n                \"defaultServiceSecurityPlanID\": \"625028bd-d1e2-4ea5-ae23-dfdd9204145e\",\n                \"defaultServiceSecurityPlanDesc\": \"Administrator - Service\",\n                \"GeneralSecurityPlanID\": \"906f125e-ebe3-4de5-91d7-648776ec6bbb\",\n                \"GeneralSecurityPlanDesc\": \"Administrator - General\",\n                \"ServiceCreationSecurityPlanID\": \"12427916-6865-44bd-b795-614998420b36\",\n                \"ServiceCreationSecurityPlanDesc\": \"No Access - Service\",\n                \"serviceSecurityPlans\": [\n                    {\n                        \"serviceId\": \"b0cd25d5-b2fa-4f94-840c-d2d0abbffa86\",\n                        \"serviceSyntheticId\": \"Azay_UAT\",\n                        \"serviceC\": \"Azay_UAT\",\n                        \"securityPlanID\": \"8\",\n                        \"securityPlanDesc\": \"Test_CCS\"\n                    }\n                ]\n            }\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
 			"name": "Get Schedule",
 			"id": "3687173-95df2d2e-4a15-47ca-ada1-46ca9d27d241",
 			"protocolProfileBehavior": {
