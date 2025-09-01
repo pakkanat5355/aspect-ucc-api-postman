@@ -2909,7 +2909,97 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "3687173-2eeed531-dd28-4dc1-90d5-f4cb12a01a62",
+					"name": "Update User",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "SessionID",
+								"value": "{{SessionID}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ldapUserID\": null,\r\n    \"userId\": \"UAT46\",\r\n    \"userFullName\": \"UAT46 - LUAT46, UAT46 LUAT46\",\r\n    \"userFName\": \"UAT46 LUAT46\",\r\n    \"userLName\": \"LUAT46\",\r\n    \"workgroupId\": \"5c5b90f0-cdbc-44d3-abfd-24db0ca73768\",\r\n    \"workgroup\": \"ADMIN\",\r\n    \"isAgent\": true,\r\n    \"isDirector\": true,\r\n    \"isManualAccept\": 0,\r\n    \"isGoNotReadyIfReject\": 0,\r\n    \"isEnterNotReadyState\": 0,\r\n    \"notReadyTimeoutSec\": 0,\r\n    \"skillAgents\": [\r\n        {\r\n            \"id\": \"4\",\r\n            \"name\": \"Test Skill\",\r\n            \"levelId\": 16.0,\r\n            \"editMode\": \"Update\"\r\n        }\r\n    ],\r\n    \"serviceUsers\": [\r\n        {\r\n            \"serviceId\": \"1\",\r\n            \"serviceC\": \"INB0111\",\r\n            \"serviceType\": \"[Resource]STYPE_Inbound\",\r\n            \"editMode\": \"Update\"\r\n        },\r\n        {\r\n            \"serviceId\": \"57\",\r\n            \"serviceC\": \"AODFeed_Ahpoz\",\r\n            \"serviceType\": \"[Resource]STYPE_Outbound\",\r\n            \"editMode\": \"Update\"\r\n        }\r\n    ],\r\n    \"directorInformation\": {\r\n        \"defaultServiceSecurityPlanID\": \"12427916-6865-44bd-b795-614998420b36\",\r\n        \"defaultServiceSecurityPlanDesc\": \"No Access - Service\",\r\n        \"GeneralSecurityPlanID\": \"09d8b04d-040a-44f4-b2bb-fb771f84b073\",\r\n        \"GeneralSecurityPlanDesc\": \"No Access - General\",\r\n        \"ServiceCreationSecurityPlanID\": \"12427916-6865-44bd-b795-614998420b36\",\r\n        \"ServiceCreationSecurityPlanDesc\": \"No Access - Service\",\r\n        \"serviceSecurityPlans\": [\r\n            {\r\n                \"serviceId\": \"05b5e0e3-deea-47f3-b649-e9029cc3d7c5\",\r\n                \"serviceSyntheticId\": \"AODFeed_Ahpoz\",\r\n                \"serviceC\": \"AODFeed_Ahpoz\",\r\n                \"securityPlanID\": \"6\",\r\n                \"securityPlanDesc\": \"Supervisor_SSP\",\r\n                \"editMode\": \"Insert\"\r\n            }\r\n        ]\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Hostname}}/aspectucc/api/v1/user?userId=uat46",
+							"host": [
+								"{{Hostname}}"
+							],
+							"path": [
+								"aspectucc",
+								"api",
+								"v1",
+								"user"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "uat46"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?RDpcVEJOX1NvdXJjZV9Db2RlXEFzcGVjdC1FbmhhbmNlbWVudFxBc3BlY3QtVUNDLVdlYkFQSVxBc3BlY3QtVUNDLVdlYkFQSVxhc3BlY3R1Y2NcYXBpXHYxXHVzZXI=?="
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 01 Sep 2025 09:47:25 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1356"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"isSuccess\": true,\n    \"message\": \"User 'UAT46 - LUAT46, UAT46 LUAT46' updated successfully\",\n    \"executeTimeMs\": 998,\n    \"result\": {\n        \"ldapUserID\": null,\n        \"userId\": \"UAT46\",\n        \"userFullName\": \"UAT46 - LUAT46, UAT46 LUAT46\",\n        \"userFName\": \"UAT46 LUAT46\",\n        \"userLName\": \"LUAT46\",\n        \"workgroupId\": \"5c5b90f0-cdbc-44d3-abfd-24db0ca73768\",\n        \"workgroup\": \"ADMIN\",\n        \"isAgent\": true,\n        \"isDirector\": true,\n        \"isManualAccept\": 0,\n        \"isGoNotReadyIfReject\": 0,\n        \"isEnterNotReadyState\": 0,\n        \"notReadyTimeoutSec\": 0,\n        \"skillAgents\": [\n            {\n                \"id\": \"4\",\n                \"name\": \"Test Skill\",\n                \"levelId\": 16,\n                \"editMode\": \"Update\"\n            }\n        ],\n        \"serviceUsers\": [\n            {\n                \"serviceId\": \"1\",\n                \"serviceC\": \"INB0111\",\n                \"serviceType\": \"[Resource]STYPE_Inbound\",\n                \"editMode\": \"Update\"\n            },\n            {\n                \"serviceId\": \"57\",\n                \"serviceC\": \"AODFeed_Ahpoz\",\n                \"serviceType\": \"[Resource]STYPE_Outbound\",\n                \"editMode\": \"Update\"\n            }\n        ],\n        \"directorInformation\": {\n            \"defaultServiceSecurityPlanID\": \"12427916-6865-44bd-b795-614998420b36\",\n            \"defaultServiceSecurityPlanDesc\": \"No Access - Service\",\n            \"GeneralSecurityPlanID\": \"09d8b04d-040a-44f4-b2bb-fb771f84b073\",\n            \"GeneralSecurityPlanDesc\": \"No Access - General\",\n            \"ServiceCreationSecurityPlanID\": \"12427916-6865-44bd-b795-614998420b36\",\n            \"ServiceCreationSecurityPlanDesc\": \"No Access - Service\",\n            \"serviceSecurityPlans\": [\n                {\n                    \"serviceId\": \"05b5e0e3-deea-47f3-b649-e9029cc3d7c5\",\n                    \"serviceSyntheticId\": \"AODFeed_Ahpoz\",\n                    \"serviceC\": \"AODFeed_Ahpoz\",\n                    \"securityPlanID\": \"6\",\n                    \"securityPlanDesc\": \"Supervisor_SSP\",\n                    \"editMode\": \"Update\"\n                }\n            ]\n        }\n    }\n}"
+				}
+			]
 		},
 		{
 			"name": "Delete User",
