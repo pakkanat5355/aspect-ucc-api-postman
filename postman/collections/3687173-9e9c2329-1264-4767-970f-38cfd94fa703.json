@@ -2629,7 +2629,7 @@
 			]
 		},
 		{
-			"name": "Get User View",
+			"name": "Get User by Workgroup Id",
 			"id": "3687173-d0ca3c35-ff2e-4c50-892f-8010f1c1541d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
