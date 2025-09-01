@@ -2881,6 +2881,15 @@
 						"type": "text"
 					}
 				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ldapUserID\": null,\r\n    \"userId\": \"UAT46\",\r\n    \"userFullName\": \"UAT46 - LUAT46, UAT46 LUAT46\",\r\n    \"userFName\": \"UAT46 LUAT46\",\r\n    \"userLName\": \"LUAT46\",\r\n    \"workgroupId\": \"8e13cc60-5940-4290-b63a-61b184cf8305\",\r\n    \"workgroup\": \"<Default>\",\r\n    \"isAgent\": false,\r\n    \"isDirector\": false,\r\n    \"isManualAccept\": 0,\r\n    \"isGoNotReadyIfReject\": 0,\r\n    \"isEnterNotReadyState\": 0,\r\n    \"notReadyTimeoutSec\": 0,\r\n    \"skillAgents\": [\r\n        {\r\n            \"id\": \"4\",\r\n            \"name\": \"Test Skill\",\r\n            \"levelId\": 16.0,\r\n            \"editMode\": \"Update\"\r\n        }\r\n    ],\r\n    \"serviceUsers\": [\r\n        {\r\n            \"serviceId\": \"57\",\r\n            \"serviceC\": \"AODFeed_Ahpoz\",\r\n            \"serviceType\": \"[Resource]STYPE_Outbound\",\r\n            \"editMode\": \"Update\"\r\n        }\r\n    ],\r\n    \"directorInformation\": {\r\n        \"defaultServiceSecurityPlanID\": null,\r\n        \"defaultServiceSecurityPlanDesc\": null,\r\n        \"GeneralSecurityPlanID\": null,\r\n        \"GeneralSecurityPlanDesc\": null,\r\n        \"ServiceCreationSecurityPlanID\": null,\r\n        \"ServiceCreationSecurityPlanDesc\": null,\r\n        \"serviceSecurityPlans\": []\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
 					"raw": "{{Hostname}}/aspectucc/api/v1/user?userId=uat46",
 					"host": [
