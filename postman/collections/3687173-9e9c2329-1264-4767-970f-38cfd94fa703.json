@@ -2763,7 +2763,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{Hostname}}/aspectucc/api/v1/user?userId=adminp01",
+					"raw": "{{Hostname}}/aspectucc/api/v1/user?userId=uat46",
 					"host": [
 						"{{Hostname}}"
 					],
@@ -2776,7 +2776,7 @@
 					"query": [
 						{
 							"key": "userId",
-							"value": "adminp01"
+							"value": "uat46"
 						}
 					]
 				}
