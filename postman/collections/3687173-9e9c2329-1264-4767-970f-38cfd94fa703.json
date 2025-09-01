@@ -2867,13 +2867,13 @@
 			]
 		},
 		{
-			"name": "Get User Copy",
+			"name": "Update User",
 			"id": "3687173-dc0e5756-5992-4e27-b763-4cca51421836",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "GET",
+				"method": "PUT",
 				"header": [
 					{
 						"key": "SessionID",
