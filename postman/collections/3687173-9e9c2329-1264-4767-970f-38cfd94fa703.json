@@ -2912,7 +2912,7 @@
 			"response": [
 				{
 					"id": "3687173-2eeed531-dd28-4dc1-90d5-f4cb12a01a62",
-					"name": "Update User",
+					"name": "Update User 200 OK",
 					"originalRequest": {
 						"method": "PUT",
 						"header": [
