@@ -4346,7 +4346,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{Hostname}}/aspectucc/api/v1/skill",
+					"raw": "{{Hostname}}/aspectucc/api/v1/generalsecurityplan",
 					"host": [
 						"{{Hostname}}"
 					],
@@ -4354,7 +4354,7 @@
 						"aspectucc",
 						"api",
 						"v1",
-						"skill"
+						"generalsecurityplan"
 					]
 				}
 			},
