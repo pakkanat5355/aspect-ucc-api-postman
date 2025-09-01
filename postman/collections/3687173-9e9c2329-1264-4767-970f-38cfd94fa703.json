@@ -4361,7 +4361,7 @@
 			"response": []
 		},
 		{
-			"name": "Get All General Security Plan Copy",
+			"name": "Get All Service Security Plan",
 			"id": "3687173-7e50bcb2-6595-4e2c-a89b-05a9dc735764",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -4376,7 +4376,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{Hostname}}/aspectucc/api/v1/generalsecurityplan",
+					"raw": "{{Hostname}}/aspectucc/api/v1/servicesecurityplan",
 					"host": [
 						"{{Hostname}}"
 					],
@@ -4384,7 +4384,37 @@
 						"aspectucc",
 						"api",
 						"v1",
-						"generalsecurityplan"
+						"servicesecurityplan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Service Security Plan Copy",
+			"id": "3687173-02b1b135-26e1-4946-aa16-4aec6e68ad84",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "SessionID",
+						"value": "{{SessionID}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{Hostname}}/aspectucc/api/v1/servicesecurityplan",
+					"host": [
+						"{{Hostname}}"
+					],
+					"path": [
+						"aspectucc",
+						"api",
+						"v1",
+						"servicesecurityplan"
 					]
 				}
 			},
