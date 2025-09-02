@@ -4097,7 +4097,7 @@
 			]
 		},
 		{
-			"name": "Get All Skill Copy",
+			"name": "Delete Skill by SkillId",
 			"id": "3687173-d8d9a70a-85dc-4fbf-b056-e2d01d9f3300",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
