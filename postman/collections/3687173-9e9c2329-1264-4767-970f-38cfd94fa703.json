@@ -2629,6 +2629,125 @@
 			]
 		},
 		{
+			"name": "Get Application Copy",
+			"id": "3687173-f15c09fe-1a18-4bbd-8370-83fe9041945d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "SessionID",
+						"value": "{{SessionID}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{Hostname}}/aspectucc/api/v1/application?applicationId=1,2,3,4,5",
+					"host": [
+						"{{Hostname}}"
+					],
+					"path": [
+						"aspectucc",
+						"api",
+						"v1",
+						"application"
+					],
+					"query": [
+						{
+							"key": "applicationId",
+							"value": "1,2,3,4,5"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "3687173-aa410145-b17c-473b-9bb4-00fbe2e5b3cd",
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "SessionID",
+								"value": "{d73f6b4b-8335-48cd-98e9-b2bf0097688e}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:50959/aspectucc/api/v1/workgroup?workgroupId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "50959",
+							"path": [
+								"aspectucc",
+								"api",
+								"v1",
+								"workgroup"
+							],
+							"query": [
+								{
+									"key": "workgroupId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?RDpcVFJCX1NvdXJjZV9Db2RlXEFzcGVjdC1FbmhhbmNlbWVudFxBc3BlY3QtVUNDLVdlYkFQSVxBc3BlY3QtVUNDLVdlYkFQSVxhc3BlY3R1Y2NcYXBpXHYxXHdvcmtncm91cA==?="
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 14 Apr 2025 09:11:29 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2807"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"isSuccess\": true,\n    \"message\": null,\n    \"executeTimeMs\": 993,\n    \"result\": [\n        {\n            \"id\": \"1\",\n            \"name\": \"ADMIN\",\n            \"totalAgents\": 19,\n            \"teamOwner\": \"llusr\",\n            \"callSettings\": {\n                \"isManualAccept\": true,\n                \"isGoNotReadyIfReject\": false,\n                \"notReadyTimeoutSec\": 0,\n                \"isEnableMultiLine\": true,\n                \"agentWorkgroups\": [\n                    {\n                        \"userId\": \"aphiratkae\",\n                        \"UserFullName\": \"aphiratkae - Kaenthong, Aphirat\",\n                        \"workgroup\": \"ADMIN\",\n                        \"userType\": \"Agent & Director\"\n                    },\n                    {\n                        \"userId\": \"apichetpra\",\n                        \"UserFullName\": \"apichetpra - Prangprayoon, Apichet\",\n                        \"workgroup\": \"ADMIN\",\n                        \"userType\": \"Agent & Director\"\n                    },\n                    {\n                        \"userId\": \"apinattachaicha\",\n                        \"UserFullName\": \"apinattachaicha - Chatrattanatam (TRB_BSS), Apinattachai\",\n                        \"workgroup\": \"ADMIN\",\n                        \"userType\": \"Agent & Director\"\n                    },\n                    {\n                        \"userId\": \"athipbodeesir\",\n                        \"UserFullName\": \"athipbodeesir - Sirilert, Athipbodee\",\n                        \"workgroup\": \"ADMIN\",\n                        \"userType\": \"Agent & Director\"\n                    },\n                    {\n                        \"userId\": \"katathepkit\",\n                        \"UserFullName\": \"katathepkit - Kitiwatcharacharoen, Katathep\",\n                        \"workgroup\": \"ADMIN\",\n                        \"userType\": \"Agent & Director\"\n                    },\n                    {\n                        \"userId\": \"pakinthi\",\n                        \"UserFullName\": \"pakinthi - Thinnamjaroen, Pakin\",\n                        \"workgroup\": \"ADMIN\",\n                        \"userType\": \"Agent & Director\"\n                    },\n                    {\n                        \"userId\": \"patcharaponwat\",\n                        \"UserFullName\": \"patcharaponwat - Watcharapanich, Patcharapon\",\n                        \"workgroup\": \"ADMIN\",\n                        \"userType\": \"Agent & Director\"\n                    },\n                    {\n                        \"userId\": \"phanuwatnil\",\n                        \"UserFullName\": \"phanuwatnil - Nilwannapha, Phanuwat\",\n                        \"workgroup\": \"ADMIN\",\n                        \"userType\": \"Agent & Director\"\n                    },\n                    {\n                        \"userId\": \"phrompiyahjal\",\n                        \"UserFullName\": \"phrompiyahjal - Jaleranlap, Phrompiyah\",\n                        \"workgroup\": \"ADMIN\",\n                        \"userType\": \"Agent & Director\"\n                    },\n                    {\n                        \"userId\": \"preeyamonnon\",\n                        \"UserFullName\": \"preeyamonnon - Nonthakote, Preeyamon\",\n                        \"workgroup\": \"ADMIN\",\n                        \"userType\": \"Agent & Director\"\n                    },\n                    {\n                        \"userId\": \"sombatsri\",\n                        \"UserFullName\": \"sombatsri - Srirod, Sombat\",\n                        \"workgroup\": \"ADMIN\",\n                        \"userType\": \"Agent & Director\"\n                    },\n                    {\n                        \"userId\": \"sompitpoo\",\n                        \"UserFullName\": \"sompitpoo - Poomtong, Sompit\",\n                        \"workgroup\": \"ADMIN\",\n                        \"userType\": \"Agent & Director\"\n                    },\n                    {\n                        \"userId\": \"sorasakpap\",\n                        \"UserFullName\": \"sorasakpap - Papan-anurak, Sorasak\",\n                        \"workgroup\": \"ADMIN\",\n                        \"userType\": \"Agent & Director\"\n                    },\n                    {\n                        \"userId\": \"thanaritman\",\n                        \"UserFullName\": \"thanaritman - Maneechot, Thanarit\",\n                        \"workgroup\": \"ADMIN\",\n                        \"userType\": \"Agent & Director\"\n                    },\n                    {\n                        \"userId\": \"thanavatjai\",\n                        \"UserFullName\": \"thanavatjai - Jaiyen, Thanavat\",\n                        \"workgroup\": \"ADMIN\",\n                        \"userType\": \"Agent & Director\"\n                    },\n                    {\n                        \"userId\": \"tichakornrew\",\n                        \"UserFullName\": \"tichakornrew - Rewngarm, Tichakorn\",\n                        \"workgroup\": \"ADMIN\",\n                        \"userType\": \"Agent & Director\"\n                    },\n                    {\n                        \"userId\": \"tony\",\n                        \"UserFullName\": \"tony - P, tony\",\n                        \"workgroup\": \"ADMIN\",\n                        \"userType\": \"Agent & Director\"\n                    },\n                    {\n                        \"userId\": \"uat02\",\n                        \"UserFullName\": \"uat02 - LUAT02, UAT02\",\n                        \"workgroup\": \"ADMIN\",\n                        \"userType\": \"Agent & Director\"\n                    },\n                    {\n                        \"userId\": \"UIPInstall\",\n                        \"UserFullName\": \"UIPInstall - UIPInstall, UIPInstall\",\n                        \"workgroup\": \"ADMIN\",\n                        \"userType\": \"Agent & Director\"\n                    }\n                ],\n                \"agentStatusReasons\": [\n                    {\n                        \"reasonId\": 134,\n                        \"reasonDesc\": \"AfterCallwork\",\n                        \"type\": \"Not Ready\"\n                    },\n                    {\n                        \"reasonId\": 146,\n                        \"reasonDesc\": \"Auxiliary Work\",\n                        \"type\": \"Park\"\n                    }\n                ]\n            }\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
 			"name": "Get User by Workgroup Id",
 			"id": "3687173-d0ca3c35-ff2e-4c50-892f-8010f1c1541d",
 			"protocolProfileBehavior": {
