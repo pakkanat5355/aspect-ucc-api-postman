@@ -2553,7 +2553,7 @@
 			"response": []
 		},
 		{
-			"name": "Update Workgroup Copy",
+			"name": "Create Workgroup",
 			"id": "3687173-9139ada8-b6ee-4fbc-8222-cfd950bdda2c",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
