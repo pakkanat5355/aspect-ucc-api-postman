@@ -2656,7 +2656,82 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "3687173-546c9c55-f971-430e-99b0-20e8420947bd",
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "SessionID",
+								"value": "{{SessionID}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{Hostname}}/aspectucc/api/v1/agentstatusreason",
+							"host": [
+								"{{Hostname}}"
+							],
+							"path": [
+								"aspectucc",
+								"api",
+								"v1",
+								"agentstatusreason"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?RDpcVFJCX1NvdXJjZV9Db2RlXEFzcGVjdC1FbmhhbmNlbWVudFxBc3BlY3QtVUNDLVdlYkFQSVxBc3BlY3QtVUNDLVdlYkFQSVxhc3BlY3R1Y2NcYXBpXHYxXGFnZW50c3RhdHVzcmVhc29u?="
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 02 Sep 2025 15:18:14 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "5338"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"isSuccess\": true,\n    \"message\": null,\n    \"executeTimeMs\": 47,\n    \"result\": [\n        {\n            \"agentStatusReasonID\": 102,\n            \"agentStatusID\": 5,\n            \"agentStatusType\": \"NotReady\",\n            \"agentStatusReasonDesc\": \"Toilet\"\n        },\n        {\n            \"agentStatusReasonID\": 103,\n            \"agentStatusID\": 5,\n            \"agentStatusType\": \"NotReady\",\n            \"agentStatusReasonDesc\": \"Mini Break\"\n        },\n        {\n            \"agentStatusReasonID\": 104,\n            \"agentStatusID\": 5,\n            \"agentStatusType\": \"NotReady\",\n            \"agentStatusReasonDesc\": \"Lunch\"\n        },\n        {\n            \"agentStatusReasonID\": 105,\n            \"agentStatusID\": 25,\n            \"agentStatusType\": \"Park\",\n            \"agentStatusReasonDesc\": \"Manual Dialing\"\n        },\n        {\n            \"agentStatusReasonID\": 106,\n            \"agentStatusID\": 20,\n            \"agentStatusType\": \"LoggedOut\",\n            \"agentStatusReasonDesc\": \"Temp106\"\n        },\n        {\n            \"agentStatusReasonID\": 107,\n            \"agentStatusID\": 20,\n            \"agentStatusType\": \"LoggedOut\",\n            \"agentStatusReasonDesc\": \"Temp107\"\n        },\n        {\n            \"agentStatusReasonID\": 108,\n            \"agentStatusID\": 5,\n            \"agentStatusType\": \"NotReady\",\n            \"agentStatusReasonDesc\": \"Temp108\"\n        },\n        {\n            \"agentStatusReasonID\": 109,\n            \"agentStatusID\": 5,\n            \"agentStatusType\": \"NotReady\",\n            \"agentStatusReasonDesc\": \"Temp109\"\n        },\n        {\n            \"agentStatusReasonID\": 110,\n            \"agentStatusID\": 5,\n            \"agentStatusType\": \"NotReady\",\n            \"agentStatusReasonDesc\": \"Temp110\"\n        },\n        {\n            \"agentStatusReasonID\": 111,\n            \"agentStatusID\": 20,\n            \"agentStatusType\": \"LoggedOut\",\n            \"agentStatusReasonDesc\": \"End Shift\"\n        },\n        {\n            \"agentStatusReasonID\": 112,\n            \"agentStatusID\": 20,\n            \"agentStatusType\": \"LoggedOut\",\n            \"agentStatusReasonDesc\": \"Exit\"\n        },\n        {\n            \"agentStatusReasonID\": 113,\n            \"agentStatusID\": 5,\n            \"agentStatusType\": \"NotReady\",\n            \"agentStatusReasonDesc\": \"x2\"\n        },\n        {\n            \"agentStatusReasonID\": 114,\n            \"agentStatusID\": 5,\n            \"agentStatusType\": \"NotReady\",\n            \"agentStatusReasonDesc\": \"x1\"\n        },\n        {\n            \"agentStatusReasonID\": 115,\n            \"agentStatusID\": 5,\n            \"agentStatusType\": \"NotReady\",\n            \"agentStatusReasonDesc\": \"Temp115\"\n        },\n        {\n            \"agentStatusReasonID\": 116,\n            \"agentStatusID\": 5,\n            \"agentStatusType\": \"NotReady\",\n            \"agentStatusReasonDesc\": \"x4\"\n        },\n        {\n            \"agentStatusReasonID\": 117,\n            \"agentStatusID\": 5,\n            \"agentStatusType\": \"NotReady\",\n            \"agentStatusReasonDesc\": \"x5\"\n        },\n        {\n            \"agentStatusReasonID\": 118,\n            \"agentStatusID\": 25,\n            \"agentStatusType\": \"Park\",\n            \"agentStatusReasonDesc\": \"Case Management\"\n        },\n        {\n            \"agentStatusReasonID\": 119,\n            \"agentStatusID\": 5,\n            \"agentStatusType\": \"NotReady\",\n            \"agentStatusReasonDesc\": \"Temp119\"\n        },\n        {\n            \"agentStatusReasonID\": 120,\n            \"agentStatusID\": 5,\n            \"agentStatusType\": \"NotReady\",\n            \"agentStatusReasonDesc\": \"Temp120\"\n        },\n        {\n            \"agentStatusReasonID\": 121,\n            \"agentStatusID\": 5,\n            \"agentStatusType\": \"NotReady\",\n            \"agentStatusReasonDesc\": \"Temp121\"\n        },\n        {\n            \"agentStatusReasonID\": 122,\n            \"agentStatusID\": 5,\n            \"agentStatusType\": \"NotReady\",\n            \"agentStatusReasonDesc\": \"Temp122\"\n        },\n        {\n            \"agentStatusReasonID\": 123,\n            \"agentStatusID\": 5,\n            \"agentStatusType\": \"NotReady\",\n            \"agentStatusReasonDesc\": \"Temp123\"\n        },\n        {\n            \"agentStatusReasonID\": 124,\n            \"agentStatusID\": 5,\n            \"agentStatusType\": \"NotReady\",\n            \"agentStatusReasonDesc\": \"Temp124\"\n        },\n        {\n            \"agentStatusReasonID\": 125,\n            \"agentStatusID\": 5,\n            \"agentStatusType\": \"NotReady\",\n            \"agentStatusReasonDesc\": \"Temp125\"\n        },\n        {\n            \"agentStatusReasonID\": 126,\n            \"agentStatusID\": 25,\n            \"agentStatusType\": \"Park\",\n            \"agentStatusReasonDesc\": \"parkToolbar\"\n        },\n        {\n            \"agentStatusReasonID\": 127,\n            \"agentStatusID\": 25,\n            \"agentStatusType\": \"Park\",\n            \"agentStatusReasonDesc\": \"parkNextcall\"\n        },\n        {\n            \"agentStatusReasonID\": 128,\n            \"agentStatusID\": 25,\n            \"agentStatusType\": \"Park\",\n            \"agentStatusReasonDesc\": \"CSAT\"\n        },\n        {\n            \"agentStatusReasonID\": 129,\n            \"agentStatusID\": 25,\n            \"agentStatusType\": \"Park\",\n            \"agentStatusReasonDesc\": \"Helping\"\n        },\n        {\n            \"agentStatusReasonID\": 130,\n            \"agentStatusID\": 25,\n            \"agentStatusType\": \"Park\",\n            \"agentStatusReasonDesc\": \"Project Activity\"\n        },\n        {\n            \"agentStatusReasonID\": 131,\n            \"agentStatusID\": 25,\n            \"agentStatusType\": \"Park\",\n            \"agentStatusReasonDesc\": \"Review\"\n        },\n        {\n            \"agentStatusReasonID\": 132,\n            \"agentStatusID\": 25,\n            \"agentStatusType\": \"Park\",\n            \"agentStatusReasonDesc\": \"Training\"\n        },\n        {\n            \"agentStatusReasonID\": 133,\n            \"agentStatusID\": 5,\n            \"agentStatusType\": \"NotReady\",\n            \"agentStatusReasonDesc\": \"Coaching/Briefing\"\n        },\n        {\n            \"agentStatusReasonID\": 134,\n            \"agentStatusID\": 5,\n            \"agentStatusType\": \"NotReady\",\n            \"agentStatusReasonDesc\": \"AfterCallwork\"\n        },\n        {\n            \"agentStatusReasonID\": 135,\n            \"agentStatusID\": 5,\n            \"agentStatusType\": \"NotReady\",\n            \"agentStatusReasonDesc\": \"Other Work\"\n        },\n        {\n            \"agentStatusReasonID\": 136,\n            \"agentStatusID\": 5,\n            \"agentStatusType\": \"NotReady\",\n            \"agentStatusReasonDesc\": \"Non Voice Service\"\n        },\n        {\n            \"agentStatusReasonID\": 137,\n            \"agentStatusID\": 25,\n            \"agentStatusType\": \"Park\",\n            \"agentStatusReasonDesc\": \"Outbound Lead\"\n        },\n        {\n            \"agentStatusReasonID\": 138,\n            \"agentStatusID\": 25,\n            \"agentStatusType\": \"Park\",\n            \"agentStatusReasonDesc\": \"Follow up case\"\n        },\n        {\n            \"agentStatusReasonID\": 139,\n            \"agentStatusID\": 25,\n            \"agentStatusType\": \"Park\",\n            \"agentStatusReasonDesc\": \"Internal Call\"\n        },\n        {\n            \"agentStatusReasonID\": 140,\n            \"agentStatusID\": 5,\n            \"agentStatusType\": \"NotReady\",\n            \"agentStatusReasonDesc\": \"Standby\"\n        },\n        {\n            \"agentStatusReasonID\": 141,\n            \"agentStatusID\": 25,\n            \"agentStatusType\": \"Park\",\n            \"agentStatusReasonDesc\": \"Tele marketing\"\n        },\n        {\n            \"agentStatusReasonID\": 142,\n            \"agentStatusID\": 5,\n            \"agentStatusType\": \"NotReady\",\n            \"agentStatusReasonDesc\": \"Operation Support\"\n        },\n        {\n            \"agentStatusReasonID\": 143,\n            \"agentStatusID\": 5,\n            \"agentStatusType\": \"NotReady\",\n            \"agentStatusReasonDesc\": \"Off-Work\"\n        },\n        {\n            \"agentStatusReasonID\": 144,\n            \"agentStatusID\": 5,\n            \"agentStatusType\": \"NotReady\",\n            \"agentStatusReasonDesc\": \"x3\"\n        },\n        {\n            \"agentStatusReasonID\": 145,\n            \"agentStatusID\": 5,\n            \"agentStatusType\": \"NotReady\",\n            \"agentStatusReasonDesc\": \"Meal\"\n        },\n        {\n            \"agentStatusReasonID\": 146,\n            \"agentStatusID\": 25,\n            \"agentStatusType\": \"Park\",\n            \"agentStatusReasonDesc\": \"Auxiliary Work\"\n        },\n        {\n            \"agentStatusReasonID\": 147,\n            \"agentStatusID\": 5,\n            \"agentStatusType\": \"NotReady\",\n            \"agentStatusReasonDesc\": \"Break Time\"\n        },\n        {\n            \"agentStatusReasonID\": 148,\n            \"agentStatusID\": 5,\n            \"agentStatusType\": \"NotReady\",\n            \"agentStatusReasonDesc\": \"Coaching\"\n        },\n        {\n            \"agentStatusReasonID\": 149,\n            \"agentStatusID\": 25,\n            \"agentStatusType\": \"Park\",\n            \"agentStatusReasonDesc\": \"Follow Up\"\n        }\n    ]\n}"
+				}
+			]
 		},
 		{
 			"name": "Get User by Workgroup Id",
