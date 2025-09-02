@@ -2391,7 +2391,7 @@
 			]
 		},
 		{
-			"name": "Get Workgroup",
+			"name": "Get Workgroup by WorkgroupId",
 			"id": "3687173-bf576c1a-e5c7-4db7-977f-0ed224c0dd3a",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
