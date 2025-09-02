@@ -4214,7 +4214,7 @@
 			"response": []
 		},
 		{
-			"name": "Update Skill by SkillId Copy",
+			"name": "Create Skill",
 			"id": "3687173-e969ff17-1ae3-4ff7-b843-c1d30fcef412",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
