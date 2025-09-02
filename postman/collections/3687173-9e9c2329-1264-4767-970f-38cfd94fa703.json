@@ -4220,7 +4220,7 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "PUT",
+				"method": "POST",
 				"header": [
 					{
 						"key": "SessionID",
@@ -4230,7 +4230,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\": \"4\",\r\n    \"name\": \"Test Skill\",\r\n    \"syntheticID\": \"09844e04-e1f2-4a66-8d88-61216a364906\",\r\n    \"weight\": 0.0,\r\n    \"amount\": 0.0,\r\n    \"editMode\": \"Update\",\r\n    \"levels\": [\r\n        {\r\n            \"levelId\": 16,\r\n            \"amount\": 2,\r\n            \"description\": \"1\",\r\n            \"displayOrder\": 0,\r\n            \"weight\": 10.5263157,\r\n            \"editMode\": \"Update\",\r\n            \"lastUpdated\": \"0001-01-01T00:00:00\"\r\n        },\r\n        {\r\n            \"levelId\": 17,\r\n            \"amount\": 6,\r\n            \"description\": \"2\",\r\n            \"displayOrder\": 2,\r\n            \"weight\": 31.5789471,\r\n            \"editMode\": \"Update\",\r\n            \"lastUpdated\": \"0001-01-01T00:00:00\"\r\n        },\r\n        {\r\n            \"levelId\": 18,\r\n            \"amount\": 10,\r\n            \"description\": \"3\",\r\n            \"displayOrder\": 3,\r\n            \"weight\": 52.63158,\r\n            \"editMode\": \"Update\",\r\n            \"lastUpdated\": \"0001-01-01T00:00:00\"\r\n        },\r\n        {\r\n            \"levelId\": 30,\r\n            \"amount\": 1,\r\n            \"description\": \"6\",\r\n            \"displayOrder\": 1,\r\n            \"weight\": 5.263158,\r\n            \"editMode\": \"Delete\",\r\n            \"lastUpdated\": \"0001-01-01T00:00:00\"\r\n        }\r\n    ]\r\n}",
+					"raw": "{\r\n    \"id\": \"4\",\r\n    \"name\": \"Test Skill123\",\r\n    \"syntheticID\": \"09844e04-e1f2-4a66-8d88-61216a364906\",\r\n    \"weight\": 0.0,\r\n    \"amount\": 0.0,\r\n    \"editMode\": \"Insert\",\r\n    \"levels\": [\r\n        {\r\n            \"levelId\": 16,\r\n            \"amount\": 2,\r\n            \"description\": \"1\",\r\n            \"displayOrder\": 0,\r\n            \"weight\": 10.5263157,\r\n            \"editMode\": \"Update\",\r\n            \"lastUpdated\": \"0001-01-01T00:00:00\"\r\n        },\r\n        {\r\n            \"levelId\": 17,\r\n            \"amount\": 6,\r\n            \"description\": \"2\",\r\n            \"displayOrder\": 2,\r\n            \"weight\": 31.5789471,\r\n            \"editMode\": \"Update\",\r\n            \"lastUpdated\": \"0001-01-01T00:00:00\"\r\n        },\r\n        {\r\n            \"levelId\": 18,\r\n            \"amount\": 10,\r\n            \"description\": \"3\",\r\n            \"displayOrder\": 3,\r\n            \"weight\": 52.63158,\r\n            \"editMode\": \"Update\",\r\n            \"lastUpdated\": \"0001-01-01T00:00:00\"\r\n        },\r\n        {\r\n            \"levelId\": 30,\r\n            \"amount\": 1,\r\n            \"description\": \"6\",\r\n            \"displayOrder\": 1,\r\n            \"weight\": 5.263158,\r\n            \"editMode\": \"Delete\",\r\n            \"lastUpdated\": \"0001-01-01T00:00:00\"\r\n        }\r\n    ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -4238,7 +4238,7 @@
 					}
 				},
 				"url": {
-					"raw": "{{Hostname}}/aspectucc/api/v1/skill?skillId=4",
+					"raw": "{{Hostname}}/aspectucc/api/v1/skill",
 					"host": [
 						"{{Hostname}}"
 					],
@@ -4247,12 +4247,6 @@
 						"api",
 						"v1",
 						"skill"
-					],
-					"query": [
-						{
-							"key": "skillId",
-							"value": "4"
-						}
 					]
 				}
 			},
