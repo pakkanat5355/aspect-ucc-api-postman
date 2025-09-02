@@ -2553,13 +2553,13 @@
 			"response": []
 		},
 		{
-			"name": "Update Workgroup Copy",
+			"name": "Delete Workgroup",
 			"id": "3687173-05467b8f-0e4e-472e-8c3f-9f8208eda989",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "PUT",
+				"method": "DELETE",
 				"header": [
 					{
 						"key": "SessionID",
@@ -2567,17 +2567,8 @@
 						"type": "text"
 					}
 				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"id\": \"23\",\r\n    \"syntheticID\": \"46799f96-4520-48b1-bd1a-3c639b73148c\",\r\n    \"name\": \"Test1\",\r\n    \"totalAgents\": 3,\r\n    \"teamOwner\": \"llusr\",\r\n    \"isManualAccept\": false,\r\n    \"isGoNotReadyIfReject\": true,\r\n    \"isEnterNotReadyState\": true,\r\n    \"notReadyTimeoutSec\": 15,\r\n    \"isEnableMultiLine\": false,\r\n    \"agentWorkgroups\": [\r\n        {\r\n            \"userId\": \"uat20\",\r\n            \"userFullName\": \"uat20 - LUAT20, UAT20\",\r\n            \"userFName\": \"UAT20\",\r\n            \"userLName\": \"LUAT20\",\r\n            \"workgroup\": \"Test1\",\r\n            \"userTypeMask\": \"3\",\r\n            \"isAgent\": true,\r\n            \"isDirector\": true,\r\n            \"editMode\": \"Update\"\r\n        },\r\n        {\r\n            \"userId\": \"UAT46\",\r\n            \"userFullName\": \"UAT46 - LUAT46, UAT46 LUAT46\",\r\n            \"userFName\": \"UAT46 LUAT46\",\r\n            \"userLName\": \"LUAT46\",\r\n            \"workgroup\": \"Test1\",\r\n            \"userTypeMask\": \"3\",\r\n            \"isAgent\": true,\r\n            \"isDirector\": true,\r\n            \"editMode\": \"Update\"\r\n        },\r\n        {\r\n            \"userId\": \"vpnpoc05\",\r\n            \"userFullName\": \"vpnpoc05 - vpnpoc05, vpnpoc05\",\r\n            \"userFName\": \"vpnpoc05\",\r\n            \"userLName\": \"vpnpoc05\",\r\n            \"workgroup\": \"Test1\",\r\n            \"userTypeMask\": \"3\",\r\n            \"isAgent\": true,\r\n            \"isDirector\": true,\r\n            \"editMode\": \"Update\"\r\n        }\r\n    ],\r\n    \"agentStatusReasons\": []\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
 				"url": {
-					"raw": "{{Hostname}}/aspectucc/api/v1/workgroup?workgroupId=23",
+					"raw": "{{Hostname}}/aspectucc/api/v1/workgroup?workgroupId=26",
 					"host": [
 						"{{Hostname}}"
 					],
@@ -2590,7 +2581,7 @@
 					"query": [
 						{
 							"key": "workgroupId",
-							"value": "23"
+							"value": "26"
 						}
 					]
 				}
