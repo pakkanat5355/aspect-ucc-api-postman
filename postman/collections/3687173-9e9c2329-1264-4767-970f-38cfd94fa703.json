@@ -4112,7 +4112,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{Hostname}}/aspectucc/api/v1/skill?skillId=",
+					"raw": "{{Hostname}}/aspectucc/api/v1/skill?skillId=4",
 					"host": [
 						"{{Hostname}}"
 					],
@@ -4125,7 +4125,7 @@
 					"query": [
 						{
 							"key": "skillId",
-							"value": ""
+							"value": "4"
 						}
 					]
 				}
