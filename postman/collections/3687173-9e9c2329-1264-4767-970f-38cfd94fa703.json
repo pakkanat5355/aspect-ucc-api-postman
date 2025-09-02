@@ -4133,7 +4133,7 @@
 			"response": [
 				{
 					"id": "3687173-939771b7-3387-4e88-bb7e-72ac361946ad",
-					"name": "Get Skill by SkillId",
+					"name": "200 OK",
 					"originalRequest": {
 						"method": "GET",
 						"header": [
