@@ -4103,7 +4103,7 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "GET",
+				"method": "DELETE",
 				"header": [
 					{
 						"key": "SessionID",
@@ -4112,7 +4112,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{Hostname}}/aspectucc/api/v1/skill",
+					"raw": "{{Hostname}}/aspectucc/api/v1/skill?skillId=",
 					"host": [
 						"{{Hostname}}"
 					],
@@ -4121,6 +4121,12 @@
 						"api",
 						"v1",
 						"skill"
+					],
+					"query": [
+						{
+							"key": "skillId",
+							"value": ""
+						}
 					]
 				}
 			},
