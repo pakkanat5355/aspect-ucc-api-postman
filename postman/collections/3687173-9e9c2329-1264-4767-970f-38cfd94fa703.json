@@ -2553,6 +2553,51 @@
 			"response": []
 		},
 		{
+			"name": "Update Workgroup Copy",
+			"id": "3687173-9139ada8-b6ee-4fbc-8222-cfd950bdda2c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "SessionID",
+						"value": "{{SessionID}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"23\",\r\n    \"syntheticID\": \"46799f96-4520-48b1-bd1a-3c639b73148c\",\r\n    \"name\": \"Test1\",\r\n    \"totalAgents\": 3,\r\n    \"teamOwner\": \"llusr\",\r\n    \"isManualAccept\": false,\r\n    \"isGoNotReadyIfReject\": true,\r\n    \"isEnterNotReadyState\": true,\r\n    \"notReadyTimeoutSec\": 15,\r\n    \"isEnableMultiLine\": false,\r\n    \"agentWorkgroups\": [\r\n        {\r\n            \"userId\": \"uat20\",\r\n            \"userFullName\": \"uat20 - LUAT20, UAT20\",\r\n            \"userFName\": \"UAT20\",\r\n            \"userLName\": \"LUAT20\",\r\n            \"workgroup\": \"Test1\",\r\n            \"userTypeMask\": \"3\",\r\n            \"isAgent\": true,\r\n            \"isDirector\": true,\r\n            \"editMode\": \"Update\"\r\n        },\r\n        {\r\n            \"userId\": \"UAT46\",\r\n            \"userFullName\": \"UAT46 - LUAT46, UAT46 LUAT46\",\r\n            \"userFName\": \"UAT46 LUAT46\",\r\n            \"userLName\": \"LUAT46\",\r\n            \"workgroup\": \"Test1\",\r\n            \"userTypeMask\": \"3\",\r\n            \"isAgent\": true,\r\n            \"isDirector\": true,\r\n            \"editMode\": \"Update\"\r\n        },\r\n        {\r\n            \"userId\": \"vpnpoc05\",\r\n            \"userFullName\": \"vpnpoc05 - vpnpoc05, vpnpoc05\",\r\n            \"userFName\": \"vpnpoc05\",\r\n            \"userLName\": \"vpnpoc05\",\r\n            \"workgroup\": \"Test1\",\r\n            \"userTypeMask\": \"3\",\r\n            \"isAgent\": true,\r\n            \"isDirector\": true,\r\n            \"editMode\": \"Update\"\r\n        }\r\n    ],\r\n    \"agentStatusReasons\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Hostname}}/aspectucc/api/v1/workgroup?workgroupId=23",
+					"host": [
+						"{{Hostname}}"
+					],
+					"path": [
+						"aspectucc",
+						"api",
+						"v1",
+						"workgroup"
+					],
+					"query": [
+						{
+							"key": "workgroupId",
+							"value": "23"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Get Application",
 			"id": "3687173-dfbb2f57-aa6c-4b1d-99a3-99599bbd62b2",
 			"protocolProfileBehavior": {
