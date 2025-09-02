@@ -2508,6 +2508,123 @@
 			]
 		},
 		{
+			"name": "Get Workgroup Detail by WorkgroupId Copy",
+			"id": "3687173-f0f29968-4e0d-4c9e-bd9a-dcd385592123",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "SessionID",
+						"value": "{{SessionID}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{Hostname}}/aspectucc/api/v1/workgroup?workgroupId=1",
+					"host": [
+						"{{Hostname}}"
+					],
+					"path": [
+						"aspectucc",
+						"api",
+						"v1",
+						"workgroup"
+					],
+					"query": [
+						{
+							"key": "workgroupId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "3687173-4d345dd0-ecee-4755-92d8-cee6e133798f",
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "SessionID",
+								"value": "{{SessionID}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{Hostname}}/aspectucc/api/v1/workgroup?workgroupId=1",
+							"host": [
+								"{{Hostname}}"
+							],
+							"path": [
+								"aspectucc",
+								"api",
+								"v1",
+								"workgroup"
+							],
+							"query": [
+								{
+									"key": "workgroupId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?RDpcVFJCX1NvdXJjZV9Db2RlXEFzcGVjdC1FbmhhbmNlbWVudFxBc3BlY3QtVUNDLVdlYkFQSVxBc3BlY3QtVUNDLVdlYkFQSVxhc3BlY3R1Y2NcYXBpXHYxXHdvcmtncm91cA==?="
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 02 Sep 2025 15:30:01 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4831"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"isSuccess\": true,\n    \"message\": null,\n    \"executeTimeMs\": 184,\n    \"result\": [\n        {\n            \"id\": \"1\",\n            \"syntheticID\": \"5c5b90f0-cdbc-44d3-abfd-24db0ca73768\",\n            \"name\": \"ADMIN\",\n            \"totalAgents\": 20,\n            \"teamOwner\": \"llusr\",\n            \"isManualAccept\": true,\n            \"isGoNotReadyIfReject\": false,\n            \"isEnterNotReadyState\": false,\n            \"notReadyTimeoutSec\": 0,\n            \"isEnableMultiLine\": true,\n            \"agentWorkgroups\": [\n                {\n                    \"userId\": \"aphiratkae\",\n                    \"userFullName\": \"aphiratkae - Kaenthong, Aphirat\",\n                    \"userFName\": \"Aphirat\",\n                    \"userLName\": \"Kaenthong\",\n                    \"workgroup\": \"ADMIN\",\n                    \"userTypeMask\": \"3\",\n                    \"isAgent\": true,\n                    \"isDirector\": true,\n                    \"editMode\": \"Update\"\n                },\n                {\n                    \"userId\": \"apichetpra\",\n                    \"userFullName\": \"apichetpra - Prangprayoon, Apichet\",\n                    \"userFName\": \"Apichet\",\n                    \"userLName\": \"Prangprayoon\",\n                    \"workgroup\": \"ADMIN\",\n                    \"userTypeMask\": \"3\",\n                    \"isAgent\": true,\n                    \"isDirector\": true,\n                    \"editMode\": \"Update\"\n                },\n                {\n                    \"userId\": \"apinattachaicha\",\n                    \"userFullName\": \"apinattachaicha - Chatrattanatam (TRB_BSS), Apinattachai\",\n                    \"userFName\": \"Apinattachai\",\n                    \"userLName\": \"Chatrattanatam (TRB_BSS)\",\n                    \"workgroup\": \"ADMIN\",\n                    \"userTypeMask\": \"3\",\n                    \"isAgent\": true,\n                    \"isDirector\": true,\n                    \"editMode\": \"Update\"\n                },\n                {\n                    \"userId\": \"athipbodeesir\",\n                    \"userFullName\": \"athipbodeesir - Sirilert, Athipbodee\",\n                    \"userFName\": \"Athipbodee\",\n                    \"userLName\": \"Sirilert\",\n                    \"workgroup\": \"ADMIN\",\n                    \"userTypeMask\": \"3\",\n                    \"isAgent\": true,\n                    \"isDirector\": true,\n                    \"editMode\": \"Update\"\n                },\n                {\n                    \"userId\": \"katathepkit\",\n                    \"userFullName\": \"katathepkit - Kitiwatcharacharoen, Katathep\",\n                    \"userFName\": \"Katathep\",\n                    \"userLName\": \"Kitiwatcharacharoen\",\n                    \"workgroup\": \"ADMIN\",\n                    \"userTypeMask\": \"3\",\n                    \"isAgent\": true,\n                    \"isDirector\": true,\n                    \"editMode\": \"Update\"\n                },\n                {\n                    \"userId\": \"pakinthi\",\n                    \"userFullName\": \"pakinthi - Thinnamjaroen, Pakin\",\n                    \"userFName\": \"Pakin\",\n                    \"userLName\": \"Thinnamjaroen\",\n                    \"workgroup\": \"ADMIN\",\n                    \"userTypeMask\": \"3\",\n                    \"isAgent\": true,\n                    \"isDirector\": true,\n                    \"editMode\": \"Update\"\n                },\n                {\n                    \"userId\": \"patcharaponwat\",\n                    \"userFullName\": \"patcharaponwat - Watcharapanich, Patcharapon\",\n                    \"userFName\": \"Patcharapon\",\n                    \"userLName\": \"Watcharapanich\",\n                    \"workgroup\": \"ADMIN\",\n                    \"userTypeMask\": \"3\",\n                    \"isAgent\": true,\n                    \"isDirector\": true,\n                    \"editMode\": \"Update\"\n                },\n                {\n                    \"userId\": \"phanuwatnil\",\n                    \"userFullName\": \"phanuwatnil - Nilwannapha, Phanuwat\",\n                    \"userFName\": \"Phanuwat\",\n                    \"userLName\": \"Nilwannapha\",\n                    \"workgroup\": \"ADMIN\",\n                    \"userTypeMask\": \"3\",\n                    \"isAgent\": true,\n                    \"isDirector\": true,\n                    \"editMode\": \"Update\"\n                },\n                {\n                    \"userId\": \"phrompiyahjal\",\n                    \"userFullName\": \"phrompiyahjal - Jaleranlap, Phrompiyah\",\n                    \"userFName\": \"Phrompiyah\",\n                    \"userLName\": \"Jaleranlap\",\n                    \"workgroup\": \"ADMIN\",\n                    \"userTypeMask\": \"3\",\n                    \"isAgent\": true,\n                    \"isDirector\": true,\n                    \"editMode\": \"Update\"\n                },\n                {\n                    \"userId\": \"preeyamonnon\",\n                    \"userFullName\": \"preeyamonnon - Nonthakote, Preeyamon\",\n                    \"userFName\": \"Preeyamon\",\n                    \"userLName\": \"Nonthakote\",\n                    \"workgroup\": \"ADMIN\",\n                    \"userTypeMask\": \"3\",\n                    \"isAgent\": true,\n                    \"isDirector\": true,\n                    \"editMode\": \"Update\"\n                },\n                {\n                    \"userId\": \"sombatsri\",\n                    \"userFullName\": \"sombatsri - Srirod, Sombat\",\n                    \"userFName\": \"Sombat\",\n                    \"userLName\": \"Srirod\",\n                    \"workgroup\": \"ADMIN\",\n                    \"userTypeMask\": \"3\",\n                    \"isAgent\": true,\n                    \"isDirector\": true,\n                    \"editMode\": \"Update\"\n                },\n                {\n                    \"userId\": \"sompitpoo\",\n                    \"userFullName\": \"sompitpoo - Poomtong, Sompit\",\n                    \"userFName\": \"Sompit\",\n                    \"userLName\": \"Poomtong\",\n                    \"workgroup\": \"ADMIN\",\n                    \"userTypeMask\": \"3\",\n                    \"isAgent\": true,\n                    \"isDirector\": true,\n                    \"editMode\": \"Update\"\n                },\n                {\n                    \"userId\": \"sorasakpap\",\n                    \"userFullName\": \"sorasakpap - Papan-anurak, Sorasak\",\n                    \"userFName\": \"Sorasak\",\n                    \"userLName\": \"Papan-anurak\",\n                    \"workgroup\": \"ADMIN\",\n                    \"userTypeMask\": \"3\",\n                    \"isAgent\": true,\n                    \"isDirector\": true,\n                    \"editMode\": \"Update\"\n                },\n                {\n                    \"userId\": \"thanaritman\",\n                    \"userFullName\": \"thanaritman - Maneechot, Thanarit\",\n                    \"userFName\": \"Thanarit\",\n                    \"userLName\": \"Maneechot\",\n                    \"workgroup\": \"ADMIN\",\n                    \"userTypeMask\": \"3\",\n                    \"isAgent\": true,\n                    \"isDirector\": true,\n                    \"editMode\": \"Update\"\n                },\n                {\n                    \"userId\": \"thanavatjai\",\n                    \"userFullName\": \"thanavatjai - Jaiyen, Thanavat\",\n                    \"userFName\": \"Thanavat\",\n                    \"userLName\": \"Jaiyen\",\n                    \"workgroup\": \"ADMIN\",\n                    \"userTypeMask\": \"3\",\n                    \"isAgent\": true,\n                    \"isDirector\": true,\n                    \"editMode\": \"Update\"\n                },\n                {\n                    \"userId\": \"tichakornrew\",\n                    \"userFullName\": \"tichakornrew - Rewngarm, Tichakorn\",\n                    \"userFName\": \"Tichakorn\",\n                    \"userLName\": \"Rewngarm\",\n                    \"workgroup\": \"ADMIN\",\n                    \"userTypeMask\": \"3\",\n                    \"isAgent\": true,\n                    \"isDirector\": true,\n                    \"editMode\": \"Update\"\n                },\n                {\n                    \"userId\": \"tony\",\n                    \"userFullName\": \"tony - P, tony\",\n                    \"userFName\": \"tony\",\n                    \"userLName\": \"P\",\n                    \"workgroup\": \"ADMIN\",\n                    \"userTypeMask\": \"3\",\n                    \"isAgent\": true,\n                    \"isDirector\": true,\n                    \"editMode\": \"Update\"\n                },\n                {\n                    \"userId\": \"uat02\",\n                    \"userFullName\": \"uat02 - LUAT02, UAT02\",\n                    \"userFName\": \"UAT02\",\n                    \"userLName\": \"LUAT02\",\n                    \"workgroup\": \"ADMIN\",\n                    \"userTypeMask\": \"3\",\n                    \"isAgent\": true,\n                    \"isDirector\": true,\n                    \"editMode\": \"Update\"\n                },\n                {\n                    \"userId\": \"UAT46\",\n                    \"userFullName\": \"UAT46 - LUAT46, UAT46 LUAT46\",\n                    \"userFName\": \"UAT46 LUAT46\",\n                    \"userLName\": \"LUAT46\",\n                    \"workgroup\": \"ADMIN\",\n                    \"userTypeMask\": \"3\",\n                    \"isAgent\": true,\n                    \"isDirector\": true,\n                    \"editMode\": \"Update\"\n                },\n                {\n                    \"userId\": \"UIPInstall\",\n                    \"userFullName\": \"UIPInstall - UIPInstall, UIPInstall\",\n                    \"userFName\": \"UIPInstall\",\n                    \"userLName\": \"UIPInstall\",\n                    \"workgroup\": \"ADMIN\",\n                    \"userTypeMask\": \"3\",\n                    \"isAgent\": true,\n                    \"isDirector\": true,\n                    \"editMode\": \"Update\"\n                }\n            ],\n            \"agentStatusReasons\": [\n                {\n                    \"reasonId\": 134,\n                    \"reasonDesc\": \"AfterCallwork\",\n                    \"type\": \"Not Ready\",\n                    \"editMode\": \"Update\"\n                },\n                {\n                    \"reasonId\": 146,\n                    \"reasonDesc\": \"Auxiliary Work\",\n                    \"type\": \"Park\",\n                    \"editMode\": \"Update\"\n                }\n            ]\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
 			"name": "Get Application",
 			"id": "3687173-dfbb2f57-aa6c-4b1d-99a3-99599bbd62b2",
 			"protocolProfileBehavior": {
