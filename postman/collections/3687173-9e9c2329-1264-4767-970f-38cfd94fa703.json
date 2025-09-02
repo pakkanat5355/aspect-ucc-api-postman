@@ -4133,6 +4133,42 @@
 			"response": []
 		},
 		{
+			"name": "Delete Skill by SkillId Copy",
+			"id": "3687173-1fcc25ec-c94e-4abe-ae7f-1fee7984c14e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "SessionID",
+						"value": "{{SessionID}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{Hostname}}/aspectucc/api/v1/skill?skillId=4",
+					"host": [
+						"{{Hostname}}"
+					],
+					"path": [
+						"aspectucc",
+						"api",
+						"v1",
+						"skill"
+					],
+					"query": [
+						{
+							"key": "skillId",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Get All Call Data Def",
 			"id": "3687173-c9471d85-7c98-4e7f-a62d-19a538b63289",
 			"protocolProfileBehavior": {
