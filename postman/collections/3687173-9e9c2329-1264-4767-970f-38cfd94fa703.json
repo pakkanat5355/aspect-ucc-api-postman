@@ -2629,7 +2629,7 @@
 			]
 		},
 		{
-			"name": "Get Application Copy",
+			"name": "Get Agent Status Reason",
 			"id": "3687173-f15c09fe-1a18-4bbd-8370-83fe9041945d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -2644,7 +2644,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{Hostname}}/aspectucc/api/v1/application?applicationId=1,2,3,4,5",
+					"raw": "{{Hostname}}/aspectucc/api/v1/agentstatusreason",
 					"host": [
 						"{{Hostname}}"
 					],
@@ -2652,13 +2652,7 @@
 						"aspectucc",
 						"api",
 						"v1",
-						"application"
-					],
-					"query": [
-						{
-							"key": "applicationId",
-							"value": "1,2,3,4,5"
-						}
+						"agentstatusreason"
 					]
 				}
 			},
