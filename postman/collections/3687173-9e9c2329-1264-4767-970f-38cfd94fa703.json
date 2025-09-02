@@ -2569,7 +2569,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Test3\",\r\n    \"totalAgents\": 3,\r\n    \"teamOwner\": \"pakkanataru\",\r\n    \"isManualAccept\": false,\r\n    \"isGoNotReadyIfReject\": true,\r\n    \"isEnterNotReadyState\": true,\r\n    \"notReadyTimeoutSec\": 15,\r\n    \"isEnableMultiLine\": false,\r\n    \"agentStatusReasons\": []\r\n}",
+					"raw": "{\r\n    \"name\": \"Test4\",\r\n    \"teamOwner\": \"pakkanataru\",\r\n    \"isManualAccept\": true,\r\n    \"isGoNotReadyIfReject\": true,\r\n    \"isEnterNotReadyState\": true,\r\n    \"notReadyTimeoutSec\": 15,\r\n    \"isEnableMultiLine\": false,\r\n    \"agentStatusReasons\": []\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -2589,7 +2589,91 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "3687173-760182ad-8622-44d2-9915-ca250e3c7b55",
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "SessionID",
+								"value": "{{SessionID}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Test4\",\r\n    \"teamOwner\": \"pakkanataru\",\r\n    \"isManualAccept\": true,\r\n    \"isGoNotReadyIfReject\": true,\r\n    \"isEnterNotReadyState\": true,\r\n    \"notReadyTimeoutSec\": 15,\r\n    \"isEnableMultiLine\": false,\r\n    \"agentStatusReasons\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Hostname}}/aspectucc/api/v1/workgroup",
+							"host": [
+								"{{Hostname}}"
+							],
+							"path": [
+								"aspectucc",
+								"api",
+								"v1",
+								"workgroup"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?RDpcVFJCX1NvdXJjZV9Db2RlXEFzcGVjdC1FbmhhbmNlbWVudFxBc3BlY3QtVUNDLVdlYkFQSVxBc3BlY3QtVUNDLVdlYkFQSVxhc3BlY3R1Y2NcYXBpXHYxXHdvcmtncm91cA==?="
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 02 Sep 2025 16:45:44 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "405"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"isSuccess\": true,\n    \"message\": \"Workgroup 'Test4' created successfully with ID: 26\",\n    \"executeTimeMs\": 802,\n    \"result\": {\n        \"id\": \"26\",\n        \"syntheticID\": \"2b3bc33d-aa57-4a07-9755-2ec21ff88231\",\n        \"name\": \"Test4\",\n        \"totalAgents\": 0,\n        \"teamOwner\": \"pakkanataru\",\n        \"isManualAccept\": true,\n        \"isGoNotReadyIfReject\": true,\n        \"isEnterNotReadyState\": true,\n        \"notReadyTimeoutSec\": 15,\n        \"isEnableMultiLine\": false,\n        \"agentWorkgroups\": [],\n        \"agentStatusReasons\": []\n    }\n}"
+				}
+			]
 		},
 		{
 			"name": "Get Application",
