@@ -2589,7 +2589,7 @@
 			"response": [
 				{
 					"id": "3687173-d917ed6b-9835-49ab-a58b-1e0e47be10b5",
-					"name": "Update Workgroup Copy",
+					"name": "200 OK",
 					"originalRequest": {
 						"method": "DELETE",
 						"header": [
