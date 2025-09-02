@@ -2427,7 +2427,7 @@
 			"response": [
 				{
 					"id": "3687173-942cb7c4-b508-46aa-96cf-d69f722905e8",
-					"name": "Get Workgroup Detail by WorkgroupId",
+					"name": "200 OK",
 					"originalRequest": {
 						"method": "GET",
 						"header": [
