@@ -2586,7 +2586,88 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "3687173-d917ed6b-9835-49ab-a58b-1e0e47be10b5",
+					"name": "Update Workgroup Copy",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "SessionID",
+								"value": "{{SessionID}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{Hostname}}/aspectucc/api/v1/workgroup?workgroupId=26",
+							"host": [
+								"{{Hostname}}"
+							],
+							"path": [
+								"aspectucc",
+								"api",
+								"v1",
+								"workgroup"
+							],
+							"query": [
+								{
+									"key": "workgroupId",
+									"value": "26"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?RDpcVFJCX1NvdXJjZV9Db2RlXEFzcGVjdC1FbmhhbmNlbWVudFxBc3BlY3QtVUNDLVdlYkFQSVxBc3BlY3QtVUNDLVdlYkFQSVxhc3BlY3R1Y2NcYXBpXHYxXHdvcmtncm91cA==?="
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 02 Sep 2025 16:46:14 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "83"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"isSuccess\": true,\n    \"message\": \"Delete successful\",\n    \"executeTimeMs\": 1829,\n    \"result\": null\n}"
+				}
+			]
 		},
 		{
 			"name": "Create Workgroup",
