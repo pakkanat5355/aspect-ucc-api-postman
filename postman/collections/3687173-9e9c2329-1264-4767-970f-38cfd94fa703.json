@@ -4133,7 +4133,7 @@
 			"response": []
 		},
 		{
-			"name": "Delete Skill by SkillId Copy",
+			"name": "Update Skill by SkillId",
 			"id": "3687173-1fcc25ec-c94e-4abe-ae7f-1fee7984c14e",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
