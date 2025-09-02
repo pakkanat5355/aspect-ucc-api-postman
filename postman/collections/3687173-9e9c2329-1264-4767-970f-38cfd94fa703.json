@@ -4097,7 +4097,7 @@
 			]
 		},
 		{
-			"name": "Get All Skill Copy",
+			"name": "Get Skill by SkillId",
 			"id": "3687173-869f3db1-fd57-4ce0-a612-35af2e6acbb3",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
