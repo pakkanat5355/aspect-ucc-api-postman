@@ -4253,7 +4253,7 @@
 			"response": [
 				{
 					"id": "3687173-6141cf96-a9c8-4524-b2f3-cdfc236cca62",
-					"name": "Update Skill by SkillId Copy",
+					"name": "200 OK",
 					"originalRequest": {
 						"method": "POST",
 						"header": [
