@@ -1658,6 +1658,129 @@
 			]
 		},
 		{
+			"name": "Create ASBR Service Copy",
+			"id": "3687173-ff0b8362-7a61-4ac0-9330-cffa92c3ef7b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "SessionID",
+						"value": "{{SessionID}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"information\": {\r\n        \"name\": \"INB_AP7\",\r\n        \"shortDescription\": \"INPI7\",\r\n        \"applicationId\": \"7ff43891-b047-407a-bfaf-0523515eed18\",\r\n        \"staticPriority\": 5,\r\n        \"serviceLevelSec\": 70,\r\n        \"whisperMessageId\": \"6cad2ca1-fde9-4dd1-ad0f-3baf23ca3f4e\",\r\n        \"scheduleId\": \"c95cabd8-2a8a-4733-93db-be9102b2250b\",\r\n        \"callDataDefId\": \"\",\r\n        \"enable\": true,\r\n        \"voiceIVRScriptId\": \"4852c3fb-2391-4c57-915f-641d9ab511a9\",\r\n        \"priorityTemplateId\": \"c9f80365-509c-4e43-9788-3455fc7f43d1\"\r\n    },\r\n    \"dispositionPlan\": {\r\n        \"syntheticId\": \"01043d2d-0a8f-46fd-8670-bf0e36d8d898\"\r\n    },\r\n    \"skill\": [\r\n        {\r\n            \"id\": \"5\",\r\n            \"name\": \"NTL_INB\",\r\n            \"levelId\": 23.0,\r\n            \"editMode\": \"Insert\"\r\n        }\r\n    ],\r\n    \"agent\": [\r\n        {\r\n            \"userId\": \"UAT23\",\r\n            \"userFullName\": \"UAT23 - LUAT23, UAT23\",\r\n            \"userFName\": \"UAT23\",\r\n            \"userLName\": \"LUAT23\",\r\n            \"weight\": 0.0,\r\n            \"agentOrder\": 1,\r\n            \"editMode\": \"Insert\"\r\n        },\r\n        {\r\n            \"userId\": \"UAT29\",\r\n            \"userFullName\": \"UAT29 - LUAT29, UAT29\",\r\n            \"userFName\": \"UAT29\",\r\n            \"userLName\": \"LUAT29\",\r\n            \"weight\": 0.0,\r\n            \"agentOrder\": 2,\r\n            \"editMode\": \"Insert\"\r\n        },\r\n        {\r\n            \"userId\": \"pakkanataru\",\r\n            \"userFullName\": \"UAT29 - LUAT29, UAT29\",\r\n            \"userFName\": \"UAT29\",\r\n            \"userLName\": \"LUAT29\",\r\n            \"weight\": 0.0,\r\n            \"agentOrder\": 3,\r\n            \"editMode\": \"Insert\"\r\n        }\r\n    ],\r\n    \"attentionRetainerGroup\": {\r\n        \"attHoliday\": {\r\n            \"attRetainerSyntheticID\": \"9dbf8b4e-f0e7-4efe-b7f3-9ade73c46ac9\"\r\n        },\r\n        \"attInactive\": {\r\n            \"attRetainerSyntheticID\": \"4375a81f-f7a2-4fcd-a26f-484df15637f9\"\r\n        }\r\n    },\r\n    \"m3Server\": [\r\n        {\r\n            \"uipServerId\": 38,\r\n            \"uipServerName\": \"M3Server-TRBASPAPPCOD01\",\r\n            \"uipServerType\": 14,\r\n            \"editMode\": \"Insert\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Hostname}}/aspectucc/api/v1/asbrservice",
+					"host": [
+						"{{Hostname}}"
+					],
+					"path": [
+						"aspectucc",
+						"api",
+						"v1",
+						"asbrservice"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "3687173-a35aac7c-233d-4bec-a5f1-6c187129ee46",
+					"name": "Create ASBR Service 200 OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "SessionID",
+								"value": "{{SessionID}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"information\": {\r\n        \"name\": \"INB_AP7\",\r\n        \"shortDescription\": \"INPI7\",\r\n        \"applicationId\": \"7ff43891-b047-407a-bfaf-0523515eed18\",\r\n        \"staticPriority\": 5,\r\n        \"serviceLevelSec\": 70,\r\n        \"whisperMessageId\": \"6cad2ca1-fde9-4dd1-ad0f-3baf23ca3f4e\",\r\n        \"scheduleId\": \"c95cabd8-2a8a-4733-93db-be9102b2250b\",\r\n        \"callDataDefId\": \"\",\r\n        \"enable\": true,\r\n        \"voiceIVRScriptId\": \"4852c3fb-2391-4c57-915f-641d9ab511a9\",\r\n        \"priorityTemplateId\": \"c9f80365-509c-4e43-9788-3455fc7f43d1\"\r\n    },\r\n    \"dispositionPlan\": {\r\n        \"syntheticId\": \"01043d2d-0a8f-46fd-8670-bf0e36d8d898\"\r\n    },\r\n    \"skill\": [\r\n        {\r\n            \"id\": \"5\",\r\n            \"name\": \"NTL_INB\",\r\n            \"levelId\": 23.0,\r\n            \"editMode\": \"Insert\"\r\n        }\r\n    ],\r\n    \"agent\": [\r\n        {\r\n            \"userId\": \"UAT23\",\r\n            \"userFullName\": \"UAT23 - LUAT23, UAT23\",\r\n            \"userFName\": \"UAT23\",\r\n            \"userLName\": \"LUAT23\",\r\n            \"weight\": 0.0,\r\n            \"agentOrder\": 1,\r\n            \"editMode\": \"Insert\"\r\n        },\r\n        {\r\n            \"userId\": \"UAT29\",\r\n            \"userFullName\": \"UAT29 - LUAT29, UAT29\",\r\n            \"userFName\": \"UAT29\",\r\n            \"userLName\": \"LUAT29\",\r\n            \"weight\": 0.0,\r\n            \"agentOrder\": 2,\r\n            \"editMode\": \"Insert\"\r\n        },\r\n        {\r\n            \"userId\": \"pakkanataru\",\r\n            \"userFullName\": \"UAT29 - LUAT29, UAT29\",\r\n            \"userFName\": \"UAT29\",\r\n            \"userLName\": \"LUAT29\",\r\n            \"weight\": 0.0,\r\n            \"agentOrder\": 3,\r\n            \"editMode\": \"Insert\"\r\n        }\r\n    ],\r\n    \"attentionRetainerGroup\": {\r\n        \"attHoliday\": {\r\n            \"attRetainerSyntheticID\": \"9dbf8b4e-f0e7-4efe-b7f3-9ade73c46ac9\"\r\n        },\r\n        \"attInactive\": {\r\n            \"attRetainerSyntheticID\": \"4375a81f-f7a2-4fcd-a26f-484df15637f9\"\r\n        }\r\n    },\r\n    \"m3Server\": [\r\n        {\r\n            \"uipServerId\": 38,\r\n            \"uipServerName\": \"M3Server-TRBASPAPPCOD01\",\r\n            \"uipServerType\": 14,\r\n            \"editMode\": \"Insert\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Hostname}}/aspectucc/api/v1/asbrservice",
+							"host": [
+								"{{Hostname}}"
+							],
+							"path": [
+								"aspectucc",
+								"api",
+								"v1",
+								"asbrservice"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?RDpcVFJCX1NvdXJjZV9Db2RlXEFzcGVjdC1FbmhhbmNlbWVudFxBc3BlY3QtVUNDLVdlYkFQSVxBc3BlY3QtVUNDLVdlYkFQSVxhc3BlY3R1Y2NcYXBpXHYxXGFzYnJzZXJ2aWNl?="
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 31 Aug 2025 12:59:24 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "6321"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"isSuccess\": true,\n    \"message\": \"ASBR Service 'INB_AP7' created successfully with ID: 230\",\n    \"executeTimeMs\": 7017,\n    \"result\": [\n        {\n            \"information\": {\n                \"id\": 230,\n                \"name\": \"INB_AP7\",\n                \"shortDescription\": \"INPI7\",\n                \"applicationId\": \"7ff43891-b047-407a-bfaf-0523515eed18\",\n                \"applicationDesc\": \"NTL_SAS_LOAN\",\n                \"staticPriority\": 5,\n                \"serviceLevelSec\": 70,\n                \"whisperMessageId\": null,\n                \"whisperMessageDesc\": null,\n                \"scheduleId\": \"c95cabd8-2a8a-4733-93db-be9102b2250b\",\n                \"scheduleDesc\": \"Test_CCS\",\n                \"callDataDefId\": \"\",\n                \"callDataDefDesc\": null,\n                \"enable\": true,\n                \"voiceIVRScriptId\": \"4852c3fb-2391-4c57-915f-641d9ab511a9\",\n                \"voiceIVRScriptDesc\": \"DYN_NTL_V1\",\n                \"totalAgent\": 3,\n                \"serviceStatus\": \"[Resource]InActive\",\n                \"priorityTemplateId\": \"c9f80365-509c-4e43-9788-3455fc7f43d1\",\n                \"priorityTemplateDesc\": \"zUAT\"\n            },\n            \"dispositionPlan\": {\n                \"id\": \"24\",\n                \"description\": \"NTL_SAS_LOAN\",\n                \"syntheticId\": \"01043d2d-0a8f-46fd-8670-bf0e36d8d898\",\n                \"disposition\": [\n                    {\n                        \"code\": \"DNCL001\",\n                        \"desc\": \"SAS Do Not Call\",\n                        \"dispClass\": \"NTL_SAS_PILOT\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"QARECF04\",\n                        \"desc\": \"QARECF04\",\n                        \"dispClass\": \"NTL_SAS_LOAN\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"FLLOWAPM\",\n                        \"desc\": \"FLLOWAPM\",\n                        \"dispClass\": \"NTL_SAS_LOAN\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"SW_DBS\",\n                        \"desc\": \"Business Detected\",\n                        \"dispClass\": \"Gateway Dispositions\",\n                        \"type\": \"[Resource]DT_GatewayDisposition\",\n                        \"routing\": \"[Resource]DRT_Transfer\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"CANCEL\",\n                        \"desc\": \"CANCEL\",\n                        \"dispClass\": \"zUAT\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"QARECF03\",\n                        \"desc\": \"QARECF03\",\n                        \"dispClass\": \"NTL_SAS_LOAN\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"QARECF06\",\n                        \"desc\": \"QARECF06\",\n                        \"dispClass\": \"NTL_SAS_LOAN\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"QARECF01\",\n                        \"desc\": \"QARECF01\",\n                        \"dispClass\": \"NTL_SAS_LOAN\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"QARECF02\",\n                        \"desc\": \"QARECF02\",\n                        \"dispClass\": \"NTL_SAS_LOAN\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"DAM\",\n                        \"desc\": \"Answering Machine\",\n                        \"dispClass\": \"Gateway Dispositions\",\n                        \"type\": \"[Resource]DT_GatewayDisposition\",\n                        \"routing\": \"[Resource]DRT_Redial\",\n                        \"numberOfRetries\": 3,\n                        \"redialDelayMins\": 60\n                    },\n                    {\n                        \"code\": \"WRONGTEL\",\n                        \"desc\": \"WRONGTEL\",\n                        \"dispClass\": \"NTL_SAS_LOAN\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"BOOKRF01\",\n                        \"desc\": \"BOOKRF01\",\n                        \"dispClass\": \"NTL_SAS_LOAN\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"PRMNTDNC\",\n                        \"desc\": \"PRMNTDNC\",\n                        \"dispClass\": \"NTL_SAS_LOAN\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"DPV\",\n                        \"desc\": \"Positive Voice\",\n                        \"dispClass\": \"Gateway Dispositions\",\n                        \"type\": \"[Resource]DT_GatewayDisposition\",\n                        \"routing\": \"[Resource]DRT_Transfer\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"NAWSOVR5\",\n                        \"desc\": \"NAWSOVR5\",\n                        \"dispClass\": \"NTL_SAS_LOAN\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"SW_DCO\",\n                        \"desc\": \"Simple Far End Connect\",\n                        \"dispClass\": \"Gateway Dispositions\",\n                        \"type\": \"[Resource]DT_GatewayDisposition\",\n                        \"routing\": \"[Resource]DRT_Transfer\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"NOTOWNER\",\n                        \"desc\": \"NOTOWNER\",\n                        \"dispClass\": \"NTL_SAS_LOAN\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"NVD\",\n                        \"desc\": \"No Voice Detect\",\n                        \"dispClass\": \"Gateway Dispositions\",\n                        \"type\": \"[Resource]DT_GatewayDisposition\",\n                        \"routing\": \"[Resource]DRT_Transfer\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"FWUP002\",\n                        \"desc\": \"SAS Refer\",\n                        \"dispClass\": \"NTL_SAS_PILOT\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"QARECF05\",\n                        \"desc\": \"QARECF05\",\n                        \"dispClass\": \"NTL_SAS_LOAN\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"DIED\",\n                        \"desc\": \"DIED\",\n                        \"dispClass\": \"NTL_SAS_LOAN\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"FWUP001\",\n                        \"desc\": \"SAS Follow UP\",\n                        \"dispClass\": \"NTL_SAS_PILOT\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"CMPLTDNC\",\n                        \"desc\": \"CMPLTDNC\",\n                        \"dispClass\": \"NTL_SAS_LOAN\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"OPTOUT\",\n                        \"desc\": \"OPTOUT\",\n                        \"dispClass\": \"NTL_SAS_LOAN\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    }\n                ]\n            },\n            \"skill\": [\n                {\n                    \"id\": \"5\",\n                    \"name\": \"NTL_INB\",\n                    \"levelId\": 23,\n                    \"editMode\": \"Update\"\n                }\n            ],\n            \"agent\": [\n                {\n                    \"userId\": \"pakkanataru\",\n                    \"userFullName\": \"pakkanataru - Arunothaijitr, Pakkanat\",\n                    \"userFName\": \"Pakkanat\",\n                    \"userLName\": \"Arunothaijitr\",\n                    \"weight\": 0,\n                    \"agentOrder\": 3,\n                    \"editMode\": \"Update\"\n                },\n                {\n                    \"userId\": \"UAT23\",\n                    \"userFullName\": \"UAT23 - LUAT23, UAT23\",\n                    \"userFName\": \"UAT23\",\n                    \"userLName\": \"LUAT23\",\n                    \"weight\": 0,\n                    \"agentOrder\": 1,\n                    \"editMode\": \"Update\"\n                },\n                {\n                    \"userId\": \"UAT29\",\n                    \"userFullName\": \"UAT29 - LUAT29, UAT29\",\n                    \"userFName\": \"UAT29\",\n                    \"userLName\": \"LUAT29\",\n                    \"weight\": 0,\n                    \"agentOrder\": 2,\n                    \"editMode\": \"Update\"\n                }\n            ],\n            \"attentionRetainerGroup\": {\n                \"attActive\": null,\n                \"attHoliday\": {\n                    \"attRetainerID\": \"1535\",\n                    \"attRetainerDesc\": \"Default Holiday\",\n                    \"attRetainerSyntheticID\": \"9dbf8b4e-f0e7-4efe-b7f3-9ade73c46ac9\"\n                },\n                \"attQMaxTime\": null,\n                \"attQMaxLength\": null,\n                \"attUnmanned\": null,\n                \"attInactive\": {\n                    \"attRetainerID\": \"1534\",\n                    \"attRetainerDesc\": \"Default Inactive/Disabled\",\n                    \"attRetainerSyntheticID\": \"4375a81f-f7a2-4fcd-a26f-484df15637f9\"\n                }\n            },\n            \"m3Server\": [\n                {\n                    \"uipServerId\": 38,\n                    \"uipServerName\": \"M3Server-TRBASPAPPCOD01\",\n                    \"uipServerType\": 14,\n                    \"editMode\": \"Update\"\n                }\n            ]\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
 			"name": "Delete ASBR Service",
 			"id": "3687173-92f2e412-8c5a-4b9f-97b6-ae24ccb5ef5a",
 			"protocolProfileBehavior": {
