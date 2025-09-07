@@ -490,7 +490,7 @@
 			]
 		},
 		{
-			"name": "Get ACD Service Copy",
+			"name": "Get ACD Service List",
 			"id": "3687173-0281bbfb-410f-45ac-8f0e-93140202faca",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -505,7 +505,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{Hostname}}/aspectucc/api/v1/acdservice?serviceId=273",
+					"raw": "{{Hostname}}/aspectucc/api/v1/acdservicelist?serviceId=273",
 					"host": [
 						"{{Hostname}}"
 					],
@@ -513,7 +513,7 @@
 						"aspectucc",
 						"api",
 						"v1",
-						"acdservice"
+						"acdservicelist"
 					],
 					"query": [
 						{
