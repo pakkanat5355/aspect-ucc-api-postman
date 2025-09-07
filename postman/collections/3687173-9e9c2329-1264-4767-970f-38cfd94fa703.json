@@ -1400,7 +1400,7 @@
 			]
 		},
 		{
-			"name": "Get ASBR Service Copy",
+			"name": "Get ASBR Service List",
 			"id": "3687173-75d19f7d-d20b-4ca7-82ca-fe4146e6343e",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -1415,7 +1415,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{Hostname}}/aspectucc/api/v1/asbrservice?serviceId=206",
+					"raw": "{{Hostname}}/aspectucc/api/v1/asbrservicelist?serviceId=206",
 					"host": [
 						"{{Hostname}}"
 					],
@@ -1423,7 +1423,7 @@
 						"aspectucc",
 						"api",
 						"v1",
-						"asbrservice"
+						"asbrservicelist"
 					],
 					"query": [
 						{
@@ -1433,88 +1433,7 @@
 					]
 				}
 			},
-			"response": [
-				{
-					"id": "3687173-f3c10257-6cf7-49eb-aa3c-4844d10096a7",
-					"name": "200 OK",
-					"originalRequest": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "SessionID",
-								"value": "{{SessionID}}",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "{{Hostname}}/aspectucc/api/v1/asbrservice?serviceId=206",
-							"host": [
-								"{{Hostname}}"
-							],
-							"path": [
-								"aspectucc",
-								"api",
-								"v1",
-								"asbrservice"
-							],
-							"query": [
-								{
-									"key": "serviceId",
-									"value": "206"
-								}
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": null,
-					"header": [
-						{
-							"key": "Cache-Control",
-							"value": "no-cache"
-						},
-						{
-							"key": "Pragma",
-							"value": "no-cache"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Expires",
-							"value": "-1"
-						},
-						{
-							"key": "Server",
-							"value": "Microsoft-IIS/10.0"
-						},
-						{
-							"key": "X-AspNet-Version",
-							"value": "4.0.30319"
-						},
-						{
-							"key": "X-SourceFiles",
-							"value": "=?UTF-8?B?RDpcVFJCX1NvdXJjZV9Db2RlXEFzcGVjdC1FbmhhbmNlbWVudFxBc3BlY3QtVUNDLVdlYkFQSVxBc3BlY3QtVUNDLVdlYkFQSVxhc3BlY3R1Y2NcYXBpXHYxXGFzYnJzZXJ2aWNl?="
-						},
-						{
-							"key": "X-Powered-By",
-							"value": "ASP.NET"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 31 Aug 2025 12:23:00 GMT"
-						},
-						{
-							"key": "Content-Length",
-							"value": "6274"
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n    \"isSuccess\": true,\n    \"message\": null,\n    \"executeTimeMs\": 275,\n    \"result\": [\n        {\n            \"information\": {\n                \"id\": 198,\n                \"name\": \"NTL_SAS_INB_V7\",\n                \"shortDescription\": \"NTLSI7\",\n                \"applicationId\": \"7ff43891-b047-407a-bfaf-0523515eed18\",\n                \"applicationDesc\": \"NTL_SAS_LOAN\",\n                \"staticPriority\": 5,\n                \"serviceLevelSec\": 80,\n                \"whisperMessageId\": null,\n                \"whisperMessageDesc\": null,\n                \"scheduleId\": \"c95cabd8-2a8a-4733-93db-be9102b2250b\",\n                \"scheduleDesc\": \"Test_CCS\",\n                \"callDataDefId\": \"\",\n                \"callDataDefDesc\": null,\n                \"enable\": true,\n                \"voiceIVRScriptId\": \"4852c3fb-2391-4c57-915f-641d9ab511a9\",\n                \"voiceIVRScriptDesc\": \"DYN_NTL_V1\",\n                \"totalAgent\": 3,\n                \"serviceStatus\": \"[Resource]InActive\",\n                \"priorityTemplateId\": \"c9f80365-509c-4e43-9788-3455fc7f43d1\",\n                \"priorityTemplateDesc\": \"zUAT\"\n            },\n            \"dispositionPlan\": {\n                \"id\": \"24\",\n                \"description\": \"NTL_SAS_LOAN\",\n                \"syntheticId\": \"01043d2d-0a8f-46fd-8670-bf0e36d8d898\",\n                \"disposition\": [\n                    {\n                        \"code\": \"DNCL001\",\n                        \"desc\": \"SAS Do Not Call\",\n                        \"dispClass\": \"NTL_SAS_PILOT\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"QARECF04\",\n                        \"desc\": \"QARECF04\",\n                        \"dispClass\": \"NTL_SAS_LOAN\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"FLLOWAPM\",\n                        \"desc\": \"FLLOWAPM\",\n                        \"dispClass\": \"NTL_SAS_LOAN\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"SW_DBS\",\n                        \"desc\": \"Business Detected\",\n                        \"dispClass\": \"Gateway Dispositions\",\n                        \"type\": \"[Resource]DT_GatewayDisposition\",\n                        \"routing\": \"[Resource]DRT_Transfer\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"CANCEL\",\n                        \"desc\": \"CANCEL\",\n                        \"dispClass\": \"zUAT\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"QARECF03\",\n                        \"desc\": \"QARECF03\",\n                        \"dispClass\": \"NTL_SAS_LOAN\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"QARECF06\",\n                        \"desc\": \"QARECF06\",\n                        \"dispClass\": \"NTL_SAS_LOAN\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"QARECF01\",\n                        \"desc\": \"QARECF01\",\n                        \"dispClass\": \"NTL_SAS_LOAN\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"QARECF02\",\n                        \"desc\": \"QARECF02\",\n                        \"dispClass\": \"NTL_SAS_LOAN\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"DAM\",\n                        \"desc\": \"Answering Machine\",\n                        \"dispClass\": \"Gateway Dispositions\",\n                        \"type\": \"[Resource]DT_GatewayDisposition\",\n                        \"routing\": \"[Resource]DRT_Redial\",\n                        \"numberOfRetries\": 3,\n                        \"redialDelayMins\": 60\n                    },\n                    {\n                        \"code\": \"WRONGTEL\",\n                        \"desc\": \"WRONGTEL\",\n                        \"dispClass\": \"NTL_SAS_LOAN\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"BOOKRF01\",\n                        \"desc\": \"BOOKRF01\",\n                        \"dispClass\": \"NTL_SAS_LOAN\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"PRMNTDNC\",\n                        \"desc\": \"PRMNTDNC\",\n                        \"dispClass\": \"NTL_SAS_LOAN\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"DPV\",\n                        \"desc\": \"Positive Voice\",\n                        \"dispClass\": \"Gateway Dispositions\",\n                        \"type\": \"[Resource]DT_GatewayDisposition\",\n                        \"routing\": \"[Resource]DRT_Transfer\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"NAWSOVR5\",\n                        \"desc\": \"NAWSOVR5\",\n                        \"dispClass\": \"NTL_SAS_LOAN\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"SW_DCO\",\n                        \"desc\": \"Simple Far End Connect\",\n                        \"dispClass\": \"Gateway Dispositions\",\n                        \"type\": \"[Resource]DT_GatewayDisposition\",\n                        \"routing\": \"[Resource]DRT_Transfer\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"NOTOWNER\",\n                        \"desc\": \"NOTOWNER\",\n                        \"dispClass\": \"NTL_SAS_LOAN\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"NVD\",\n                        \"desc\": \"No Voice Detect\",\n                        \"dispClass\": \"Gateway Dispositions\",\n                        \"type\": \"[Resource]DT_GatewayDisposition\",\n                        \"routing\": \"[Resource]DRT_Transfer\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"FWUP002\",\n                        \"desc\": \"SAS Refer\",\n                        \"dispClass\": \"NTL_SAS_PILOT\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"QARECF05\",\n                        \"desc\": \"QARECF05\",\n                        \"dispClass\": \"NTL_SAS_LOAN\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"DIED\",\n                        \"desc\": \"DIED\",\n                        \"dispClass\": \"NTL_SAS_LOAN\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"FWUP001\",\n                        \"desc\": \"SAS Follow UP\",\n                        \"dispClass\": \"NTL_SAS_PILOT\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"CMPLTDNC\",\n                        \"desc\": \"CMPLTDNC\",\n                        \"dispClass\": \"NTL_SAS_LOAN\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    },\n                    {\n                        \"code\": \"OPTOUT\",\n                        \"desc\": \"OPTOUT\",\n                        \"dispClass\": \"NTL_SAS_LOAN\",\n                        \"type\": \"[Resource]DT_UserDefinedDisposition\",\n                        \"routing\": \"[Resource]DRT_None\",\n                        \"numberOfRetries\": 0,\n                        \"redialDelayMins\": 0\n                    }\n                ]\n            },\n            \"skill\": [\n                {\n                    \"id\": \"5\",\n                    \"name\": \"NTL_INB\",\n                    \"levelId\": 23,\n                    \"editMode\": \"Update\"\n                }\n            ],\n            \"agent\": [\n                {\n                    \"userId\": \"pakkanataru\",\n                    \"userFullName\": \"pakkanataru - Arunothaijitr, Pakkanat\",\n                    \"userFName\": \"Pakkanat\",\n                    \"userLName\": \"Arunothaijitr\",\n                    \"weight\": 0,\n                    \"agentOrder\": 3,\n                    \"editMode\": \"Update\"\n                },\n                {\n                    \"userId\": \"UAT23\",\n                    \"userFullName\": \"UAT23 - LUAT23, UAT23\",\n                    \"userFName\": \"UAT23\",\n                    \"userLName\": \"LUAT23\",\n                    \"weight\": 0,\n                    \"agentOrder\": 1,\n                    \"editMode\": \"Update\"\n                },\n                {\n                    \"userId\": \"UAT29\",\n                    \"userFullName\": \"UAT29 - LUAT29, UAT29\",\n                    \"userFName\": \"UAT29\",\n                    \"userLName\": \"LUAT29\",\n                    \"weight\": 0,\n                    \"agentOrder\": 2,\n                    \"editMode\": \"Update\"\n                }\n            ],\n            \"attentionRetainerGroup\": {\n                \"attActive\": null,\n                \"attHoliday\": {\n                    \"attRetainerID\": \"1535\",\n                    \"attRetainerDesc\": \"Default Holiday\",\n                    \"attRetainerSyntheticID\": \"9dbf8b4e-f0e7-4efe-b7f3-9ade73c46ac9\"\n                },\n                \"attQMaxTime\": null,\n                \"attQMaxLength\": null,\n                \"attUnmanned\": null,\n                \"attInactive\": {\n                    \"attRetainerID\": \"1534\",\n                    \"attRetainerDesc\": \"Default Inactive/Disabled\",\n                    \"attRetainerSyntheticID\": \"4375a81f-f7a2-4fcd-a26f-484df15637f9\"\n                }\n            },\n            \"m3Server\": [\n                {\n                    \"uipServerId\": 38,\n                    \"uipServerName\": \"M3Server-TRBASPAPPCOD01\",\n                    \"uipServerType\": 14,\n                    \"editMode\": \"Update\"\n                }\n            ]\n        }\n    ]\n}"
-				}
-			]
+			"response": []
 		},
 		{
 			"name": "Update ASBR Service",
