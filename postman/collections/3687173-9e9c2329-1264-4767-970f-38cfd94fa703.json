@@ -5190,7 +5190,7 @@
 			]
 		},
 		{
-			"name": "Get All Call Data Def Copy",
+			"name": "Get All Call Data Def by Call Data Def Id",
 			"id": "3687173-583ad91e-59c2-4cb4-abe0-5895a67b98cc",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
