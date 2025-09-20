@@ -5205,7 +5205,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{Hostname}}/aspectucc/api/v1/calldatadef",
+					"raw": "{{Hostname}}/aspectucc/api/v1/calldatadef?calldatadefid=1",
 					"host": [
 						"{{Hostname}}"
 					],
@@ -5214,6 +5214,12 @@
 						"api",
 						"v1",
 						"calldatadef"
+					],
+					"query": [
+						{
+							"key": "calldatadefid",
+							"value": "1"
+						}
 					]
 				}
 			},
