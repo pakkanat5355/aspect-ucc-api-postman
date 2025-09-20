@@ -5190,6 +5190,111 @@
 			]
 		},
 		{
+			"name": "Get All Call Data Def Copy",
+			"id": "3687173-583ad91e-59c2-4cb4-abe0-5895a67b98cc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "SessionID",
+						"value": "{{SessionID}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{Hostname}}/aspectucc/api/v1/calldatadef",
+					"host": [
+						"{{Hostname}}"
+					],
+					"path": [
+						"aspectucc",
+						"api",
+						"v1",
+						"calldatadef"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "3687173-5a7000f9-3e7b-4bb2-b32f-cd8337b4fe61",
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "SessionID",
+								"value": "{{SessionID}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{Hostname}}/aspectucc/api/v1/calldatadef",
+							"host": [
+								"{{Hostname}}"
+							],
+							"path": [
+								"aspectucc",
+								"api",
+								"v1",
+								"calldatadef"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?RDpcVFJCX1NvdXJjZV9Db2RlXEFzcGVjdC1FbmhhbmNlbWVudFxBc3BlY3QtVUNDLVdlYkFQSVxBc3BlY3QtVUNDLVdlYkFQSVxhc3BlY3R1Y2NcYXBpXHYxXGNhbGxkYXRhZGVm?="
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 31 Jul 2025 17:39:08 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "7644"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"isSuccess\": true,\n    \"message\": null,\n    \"executeTimeMs\": 312,\n    \"result\": [\n        {\n            \"CallDataDefID\": \"1\",\n            \"CallDataDefSyntheticID\": \"1977b02d-4508-4d99-a26c-38806480a777\",\n            \"Name\": \"zUAT_Epro_CDD\",\n            \"TableDef\": {\n                \"TableDefID\": \"1\",\n                \"TableDefDesc\": \"zUAT_01\",\n                \"TableDefSyntheticID\": \"33fb56f7-d2f4-4821-8c27-ce2d396673af\"\n            }\n        },\n        {\n            \"CallDataDefID\": \"2\",\n            \"CallDataDefSyntheticID\": \"7b8b8e06-88fd-45ca-a1c8-7fd3b9460f81\",\n            \"Name\": \"zUAT_CDD_Trickle\",\n            \"TableDef\": {\n                \"TableDefID\": \"2\",\n                \"TableDefDesc\": \"zUAT_TB_Trickle\",\n                \"TableDefSyntheticID\": \"6e22c0b8-fd5f-4c1a-9c3c-a7b24c95e4c2\"\n            }\n        },\n        {\n            \"CallDataDefID\": \"3\",\n            \"CallDataDefSyntheticID\": \"8d479306-d45a-443d-b690-ed3d8b93922f\",\n            \"Name\": \"zUAT_Maxar_PDS_TBD01\",\n            \"TableDef\": {\n                \"TableDefID\": \"3\",\n                \"TableDefDesc\": \"zUAT_Maxar_PDS_TBD01\",\n                \"TableDefSyntheticID\": \"6c777b22-e184-41c5-9d9f-b63002c2be05\"\n            }\n        },\n        {\n            \"CallDataDefID\": \"4\",\n            \"CallDataDefSyntheticID\": \"936e9d63-df7f-4ef6-a82a-0e68de6fdc91\",\n            \"Name\": \"zUAT_Dev_20Param\",\n            \"TableDef\": {\n                \"TableDefID\": \"0\",\n                \"TableDefDesc\": \"<None>\",\n                \"TableDefSyntheticID\": \"5b62bb48-792b-4815-8fd4-8d88ea0e465b\"\n            }\n        },\n        {\n            \"CallDataDefID\": \"5\",\n            \"CallDataDefSyntheticID\": \"8e3961e8-bf48-4351-8a03-011d91c19dbe\",\n            \"Name\": \"TLeasing_Collection_PDS_CDD\",\n            \"TableDef\": {\n                \"TableDefID\": \"5\",\n                \"TableDefDesc\": \"TLeasing_PDS\",\n                \"TableDefSyntheticID\": \"1fd5b822-fab6-4745-b21d-5b69a851d755\"\n            }\n        },\n        {\n            \"CallDataDefID\": \"6\",\n            \"CallDataDefSyntheticID\": \"4688c983-6627-465e-a7b3-257925e900a7\",\n            \"Name\": \"TLeasing_by_Loan_Type_PDS_CDD\",\n            \"TableDef\": {\n                \"TableDefID\": \"6\",\n                \"TableDefDesc\": \"TLeasing_Collection_By_Loan_Type\",\n                \"TableDefSyntheticID\": \"683669d5-a421-447d-8acf-f7a632ccb331\"\n            }\n        },\n        {\n            \"CallDataDefID\": \"7\",\n            \"CallDataDefSyntheticID\": \"a2cbdf72-6b5c-467b-a302-d8a8818629cc\",\n            \"Name\": \"TLeasing_PDS_CDD_01\",\n            \"TableDef\": {\n                \"TableDefID\": \"10\",\n                \"TableDefDesc\": \"TLeasing_PDS_TD_01\",\n                \"TableDefSyntheticID\": \"666d88d4-a2b9-46f9-ad4d-14324e76723e\"\n            }\n        },\n        {\n            \"CallDataDefID\": \"13\",\n            \"CallDataDefSyntheticID\": \"fb697372-3999-4492-b8f4-4b0b65c8bd19\",\n            \"Name\": \"TLeasing_PDS_CDD_02\",\n            \"TableDef\": {\n                \"TableDefID\": \"10\",\n                \"TableDefDesc\": \"TLeasing_PDS_TD_01\",\n                \"TableDefSyntheticID\": \"666d88d4-a2b9-46f9-ad4d-14324e76723e\"\n            }\n        },\n        {\n            \"CallDataDefID\": \"14\",\n            \"CallDataDefSyntheticID\": \"240f4469-35e4-47bf-858c-4c8dc28562f6\",\n            \"Name\": \"CL_02_CUR_2023\",\n            \"TableDef\": {\n                \"TableDefID\": \"13\",\n                \"TableDefDesc\": \"CL_02_CUR_2023\",\n                \"TableDefSyntheticID\": \"852097cd-5aa5-45b2-b970-439df6075b6a\"\n            }\n        },\n        {\n            \"CallDataDefID\": \"15\",\n            \"CallDataDefSyntheticID\": \"4937b2dc-41ff-4059-afa0-7056b526da9a\",\n            \"Name\": \"zUAT_CDD_AZAY\",\n            \"TableDef\": {\n                \"TableDefID\": \"14\",\n                \"TableDefDesc\": \"zUAT_AZAY\",\n                \"TableDefSyntheticID\": \"5022d3ec-f2a8-4532-a836-c86455f7e4e1\"\n            }\n        },\n        {\n            \"CallDataDefID\": \"16\",\n            \"CallDataDefSyntheticID\": \"127ba030-a1c8-41eb-a630-06d6ef62c0fd\",\n            \"Name\": \"CL_02_CUR_2023_CUS\",\n            \"TableDef\": {\n                \"TableDefID\": \"0\",\n                \"TableDefDesc\": \"<None>\",\n                \"TableDefSyntheticID\": \"5b62bb48-792b-4815-8fd4-8d88ea0e465b\"\n            }\n        },\n        {\n            \"CallDataDefID\": \"17\",\n            \"CallDataDefSyntheticID\": \"7528183c-90e5-4b2a-807e-2f2ea071aff8\",\n            \"Name\": \"GHB_CDD\",\n            \"TableDef\": {\n                \"TableDefID\": \"16\",\n                \"TableDefDesc\": \"GHB_TD\",\n                \"TableDefSyntheticID\": \"82f01bef-7090-4cbe-9e74-c9db4cf7ab51\"\n            }\n        },\n        {\n            \"CallDataDefID\": \"18\",\n            \"CallDataDefSyntheticID\": \"6b0bf0fc-464c-44a7-868a-fb11235fb907\",\n            \"Name\": \"CHUBB_CDD\",\n            \"TableDef\": {\n                \"TableDefID\": \"17\",\n                \"TableDefDesc\": \"CHUBB_TBD\",\n                \"TableDefSyntheticID\": \"d9c42636-f16e-493f-8b99-135da8888b8f\"\n            }\n        },\n        {\n            \"CallDataDefID\": \"19\",\n            \"CallDataDefSyntheticID\": \"c1d40c70-1b59-470d-9587-c8ba1da7e8c5\",\n            \"Name\": \"N1373_Welcome_CDD\",\n            \"TableDef\": {\n                \"TableDefID\": \"19\",\n                \"TableDefDesc\": \"N1373_Welcome_TDD\",\n                \"TableDefSyntheticID\": \"3617ee65-746b-4438-953f-881efccd53e9\"\n            }\n        },\n        {\n            \"CallDataDefID\": \"20\",\n            \"CallDataDefSyntheticID\": \"8bee18b6-8ac0-4f85-bdf3-d4629bc7d62d\",\n            \"Name\": \"Call_Logger\",\n            \"TableDef\": null\n        },\n        {\n            \"CallDataDefID\": \"21\",\n            \"CallDataDefSyntheticID\": \"4e9b48c6-ea82-4d04-8097-6c2f83c9eda5\",\n            \"Name\": \"Dsure\",\n            \"TableDef\": {\n                \"TableDefID\": \"23\",\n                \"TableDefDesc\": \"POC_Test_Dsure\",\n                \"TableDefSyntheticID\": \"8697e5d8-8fcf-4455-8b16-b0d0eb53f959\"\n            }\n        },\n        {\n            \"CallDataDefID\": \"22\",\n            \"CallDataDefSyntheticID\": \"a84b2880-91ec-417a-b021-785cd29724d4\",\n            \"Name\": \"NTL_TEST_CDD\",\n            \"TableDef\": {\n                \"TableDefID\": \"25\",\n                \"TableDefDesc\": \"NTL_TEST\",\n                \"TableDefSyntheticID\": \"f65c287b-b85d-45d1-8579-37b1799d45d2\"\n            }\n        },\n        {\n            \"CallDataDefID\": \"23\",\n            \"CallDataDefSyntheticID\": \"156ec62b-dd96-4463-af0f-78beb73c58ef\",\n            \"Name\": \"Dusre_Testhok\",\n            \"TableDef\": {\n                \"TableDefID\": \"26\",\n                \"TableDefDesc\": \"POC_Dsure_Test_dis_Y\",\n                \"TableDefSyntheticID\": \"6a74dfd3-5867-4613-b86c-9361da875340\"\n            }\n        },\n        {\n            \"CallDataDefID\": \"24\",\n            \"CallDataDefSyntheticID\": \"9124d6c2-bf17-4087-906e-12809528ab0a\",\n            \"Name\": \"NTL_WELCOME_UAT\",\n            \"TableDef\": {\n                \"TableDefID\": \"24\",\n                \"TableDefDesc\": \"zUAT_NTL_WC\",\n                \"TableDefSyntheticID\": \"6e706ca2-a31c-48d3-a775-15cfbc334c02\"\n            }\n        },\n        {\n            \"CallDataDefID\": \"25\",\n            \"CallDataDefSyntheticID\": \"17aea8d9-b5e9-4013-93a7-bd5a8401d93d\",\n            \"Name\": \"NTL_SAS_PILOT\",\n            \"TableDef\": {\n                \"TableDefID\": \"28\",\n                \"TableDefDesc\": \"NTL_SAS_PILOT\",\n                \"TableDefSyntheticID\": \"257cea6c-d6e4-4e2f-b431-5a1b018a0106\"\n            }\n        },\n        {\n            \"CallDataDefID\": \"26\",\n            \"CallDataDefSyntheticID\": \"16e6faad-d731-47ff-b3c7-85dab6677b8b\",\n            \"Name\": \"TPB_CDD\",\n            \"TableDef\": {\n                \"TableDefID\": \"31\",\n                \"TableDefDesc\": \"zUAT_TPB_TD\",\n                \"TableDefSyntheticID\": \"7ac58384-8281-41c4-90c0-8162965bfa95\"\n            }\n        },\n        {\n            \"CallDataDefID\": \"27\",\n            \"CallDataDefSyntheticID\": \"8ca7b3bf-d251-492f-8fb0-949211cba183\",\n            \"Name\": \"SEG_PDS_CDD02\",\n            \"TableDef\": {\n                \"TableDefID\": \"30\",\n                \"TableDefDesc\": \"SEG_PDS_TB02\",\n                \"TableDefSyntheticID\": \"815bf29e-6d45-4984-a1a3-370c7c278111\"\n            }\n        },\n        {\n            \"CallDataDefID\": \"28\",\n            \"CallDataDefSyntheticID\": \"ce826fd8-245e-42ff-8aac-a269fc534065\",\n            \"Name\": \"DEMO_CDD\",\n            \"TableDef\": {\n                \"TableDefID\": \"32\",\n                \"TableDefDesc\": \"zUAT03\",\n                \"TableDefSyntheticID\": \"49b1efb6-e635-4f37-91f7-45a1a986ffaf\"\n            }\n        },\n        {\n            \"CallDataDefID\": \"29\",\n            \"CallDataDefSyntheticID\": \"8aa1cc97-b2c8-4303-81b9-4ca12600e1f6\",\n            \"Name\": \"POC_PDS_CDD\",\n            \"TableDef\": {\n                \"TableDefID\": \"33\",\n                \"TableDefDesc\": \"zUAT_Blaster\",\n                \"TableDefSyntheticID\": \"aabae356-a587-40d8-aaa1-e30fbac998f3\"\n            }\n        },\n        {\n            \"CallDataDefID\": \"30\",\n            \"CallDataDefSyntheticID\": \"46d1c151-5e33-47ac-8244-17b437ab4856\",\n            \"Name\": \"NTL_SAS_LOAN\",\n            \"TableDef\": {\n                \"TableDefID\": \"34\",\n                \"TableDefDesc\": \"NTL_SAS_LOAN\",\n                \"TableDefSyntheticID\": \"e4b7ee14-ce5a-4a1a-ac53-b3beb6df2154\"\n            }\n        },\n        {\n            \"CallDataDefID\": \"31\",\n            \"CallDataDefSyntheticID\": \"2f612ab7-581d-40e4-b487-d4958a6ca11f\",\n            \"Name\": \"NTL_SAS_INSURANCE\",\n            \"TableDef\": {\n                \"TableDefID\": \"35\",\n                \"TableDefDesc\": \"NTL_SAS_INSURANCE\",\n                \"TableDefSyntheticID\": \"6531eb56-65dc-4c33-9593-eb94a573e3a9\"\n            }\n        },\n        {\n            \"CallDataDefID\": \"32\",\n            \"CallDataDefSyntheticID\": \"9d78890e-52d1-480f-846c-76fe3dcb15c5\",\n            \"Name\": \"LMG_CDD\",\n            \"TableDef\": {\n                \"TableDefID\": \"36\",\n                \"TableDefDesc\": \"zUAT_LMG_TD\",\n                \"TableDefSyntheticID\": \"2b4031cf-cf24-4307-9cc5-904a1b144269\"\n            }\n        },\n        {\n            \"CallDataDefID\": \"33\",\n            \"CallDataDefSyntheticID\": \"4bd57d4a-f5d9-451c-9403-ff1c3a3766ea\",\n            \"Name\": \"NTL_HOTLEAD_LOAN\",\n            \"TableDef\": {\n                \"TableDefID\": \"37\",\n                \"TableDefDesc\": \"NTL_HOTLEAD_LOAN\",\n                \"TableDefSyntheticID\": \"3350a475-2c06-44df-901a-b65423bb7bbe\"\n            }\n        },\n        {\n            \"CallDataDefID\": \"34\",\n            \"CallDataDefSyntheticID\": \"1e3d7099-ee3f-463f-9b8f-38463cb8b2e2\",\n            \"Name\": \"zUAT01\",\n            \"TableDef\": {\n                \"TableDefID\": \"1\",\n                \"TableDefDesc\": \"zUAT_01\",\n                \"TableDefSyntheticID\": \"33fb56f7-d2f4-4821-8c27-ce2d396673af\"\n            }\n        },\n        {\n            \"CallDataDefID\": \"35\",\n            \"CallDataDefSyntheticID\": \"1734e385-b43b-42e6-8014-39b97d461dea\",\n            \"Name\": \"NANO_D1_1106\",\n            \"TableDef\": {\n                \"TableDefID\": \"38\",\n                \"TableDefDesc\": \"NANO_D1_Range_1106\",\n                \"TableDefSyntheticID\": \"ff76fa5b-8d88-46ee-a436-6ec6748e5b91\"\n            }\n        },\n        {\n            \"CallDataDefID\": \"36\",\n            \"CallDataDefSyntheticID\": \"f5121698-578e-4d15-b00c-e706ed617856\",\n            \"Name\": \"MTI_CDD\",\n            \"TableDef\": {\n                \"TableDefID\": \"39\",\n                \"TableDefDesc\": \"MTI_TD\",\n                \"TableDefSyntheticID\": \"4386e4b3-6d6b-4b7f-9568-de8437970583\"\n            }\n        },\n        {\n            \"CallDataDefID\": \"37\",\n            \"CallDataDefSyntheticID\": \"80882999-fd58-47d2-9007-2c4254b85da7\",\n            \"Name\": \"NTL_SAS_INSURANCE_V2\",\n            \"TableDef\": {\n                \"TableDefID\": \"40\",\n                \"TableDefDesc\": \"zUAT_TB_Trickle_v2\",\n                \"TableDefSyntheticID\": \"5de0bca1-2877-49a1-bcbc-99d34559dda8\"\n            }\n        },\n        {\n            \"CallDataDefID\": \"38\",\n            \"CallDataDefSyntheticID\": \"2a9adb96-8fc3-451f-afb3-9c33c696858e\",\n            \"Name\": \"MTI_CDD2\",\n            \"TableDef\": {\n                \"TableDefID\": \"42\",\n                \"TableDefDesc\": \"MTI_TD2\",\n                \"TableDefSyntheticID\": \"df956394-ff16-47cd-ab0c-5f0e65e3f9e4\"\n            }\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
 			"name": "Get Table Stat by Table Def Id",
 			"id": "3687173-c57c75cc-f229-47e8-b2d6-9c2f318aa9af",
 			"protocolProfileBehavior": {
