@@ -2794,7 +2794,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Test4\",\r\n    \"teamOwner\": \"pakkanataru\",\r\n    \"isManualAccept\": true,\r\n    \"isGoNotReadyIfReject\": true,\r\n    \"isEnterNotReadyState\": true,\r\n    \"notReadyTimeoutSec\": 15,\r\n    \"isEnableMultiLine\": false,\r\n    \"agentStatusReasons\": []\r\n}",
+					"raw": "{\r\n    \"name\": \"Test4\",\r\n    \"teamOwner\": \"pakkanataru\",\r\n    \"isManualAccept\": true,\r\n    \"isGoNotReadyIfReject\": true,\r\n    \"isEnterNotReadyState\": true,\r\n    \"notReadyTimeoutSec\": 15,\r\n    \"isEnableMultiLine\": false,\r\n    \"agentStatusReasons\": [],\r\n    \"agentWorkgroups\": [\r\n                {\r\n                    \"userId\": \"chatreeyos\",\r\n                    \"userFullName\": \"chatreeyos - Yosnak, Chatree\",\r\n                    \"userFName\": \"Chatree\",\r\n                    \"userLName\": \"Yosnak\",\r\n                    \"workgroup\": \"zUAT\",\r\n                    \"userTypeMask\": \"3\",\r\n                    \"isAgent\": true,\r\n                    \"isDirector\": true,\r\n                    \"editMode\": \"Update\"\r\n                }\r\n            ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
