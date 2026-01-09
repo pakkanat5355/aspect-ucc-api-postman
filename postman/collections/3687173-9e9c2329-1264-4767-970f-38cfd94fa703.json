@@ -2632,7 +2632,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\": \"32\",\r\n    \"syntheticID\": \"f862b732-3844-4432-aca7-402a47af7300\",\r\n    \"name\": \"Test44\",\r\n    \"totalAgents\": 0,\r\n    \"teamOwner\": \"pakkanataru\",\r\n    \"isManualAccept\": true,\r\n    \"isGoNotReadyIfReject\": true,\r\n    \"isEnterNotReadyState\": true,\r\n    \"notReadyTimeoutSec\": 15,\r\n    \"isEnableMultiLine\": false,\r\n    \"agentWorkgroups\": [\r\n        {\r\n                    \"userId\": \"chatreeyos\",\r\n                    \"userFullName\": \"chatreeyos - Yosnak, Chatree\",\r\n                    \"userFName\": \"Chatree\",\r\n                    \"userLName\": \"Yosnak\",\r\n                    \"workgroup\": \"zUAT\",\r\n                    \"userTypeMask\": \"3\",\r\n                    \"isAgent\": true,\r\n                    \"isDirector\": true,\r\n                    \"editMode\": \"Update\"\r\n                }\r\n    ],\r\n    \"agentStatusReasons\": []\r\n}",
+					"raw": "{\r\n            \"id\": \"35\",\r\n            \"syntheticID\": \"40f007d1-b9d9-4215-8db7-37d07640ab36\",\r\n            \"name\": \"123\",\r\n            \"totalAgents\": 1,\r\n            \"teamOwner\": \"llusr\",\r\n            \"isManualAccept\": true,\r\n            \"isGoNotReadyIfReject\": false,\r\n            \"isEnterNotReadyState\": false,\r\n            \"notReadyTimeoutSec\": 0,\r\n            \"isEnableMultiLine\": true,\r\n            \"agentWorkgroups\": [\r\n                {\r\n                    \"userId\": \"uat08\",\r\n                    \"userFullName\": \"uat08 - LUAT08, UAT08\",\r\n                    \"userFName\": \"UAT08\",\r\n                    \"userLName\": \"LUAT08\",\r\n                    \"workgroup\": \"123\",\r\n                    \"userTypeMask\": \"1\",\r\n                    \"isAgent\": true,\r\n                    \"isDirector\": false,\r\n                    \"editMode\": \"Update\"\r\n                }\r\n            ],\r\n            \"agentStatusReasons\": []\r\n        }",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -2640,7 +2640,7 @@
 					}
 				},
 				"url": {
-					"raw": "{{Hostname}}/aspectucc/api/v1/workgroup?workgroupId=32",
+					"raw": "{{Hostname}}/aspectucc/api/v1/workgroup?workgroupId=35",
 					"host": [
 						"{{Hostname}}"
 					],
@@ -2653,7 +2653,7 @@
 					"query": [
 						{
 							"key": "workgroupId",
-							"value": "32"
+							"value": "35"
 						}
 					]
 				}
