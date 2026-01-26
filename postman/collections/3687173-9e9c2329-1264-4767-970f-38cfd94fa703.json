@@ -2745,7 +2745,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{Hostname}}/aspectucc/api/v1/servicelist?serviceId=273,1",
+					"raw": "{{Hostname}}/aspectucc/api/v1/servicelist?serviceId=273,1,2",
 					"host": [
 						"{{Hostname}}"
 					],
@@ -2758,12 +2758,99 @@
 					"query": [
 						{
 							"key": "serviceId",
-							"value": "273,1"
+							"value": "273,1,2"
 						}
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "3687173-08d1632a-8a4f-4c8e-b175-1a25e7c355c0",
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "SessionID",
+								"value": "{{SessionID}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{Hostname}}/aspectucc/api/v1/servicelist?serviceId=273,1,2",
+							"host": [
+								"{{Hostname}}"
+							],
+							"path": [
+								"aspectucc",
+								"api",
+								"v1",
+								"servicelist"
+							],
+							"query": [
+								{
+									"key": "serviceId",
+									"value": "273,1,2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?RDpcVEJOX1NvdXJjZV9Db2RlXEFzcGVjdC1FbmhhbmNlbWVudFxBc3BlY3QtVUNDLVdlYkFQSVxBc3BlY3QtVUNDLVdlYkFQSVxhc3BlY3R1Y2NcYXBpXHYxXHNlcnZpY2VsaXN0?="
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 26 Jan 2026 19:04:21 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "723"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"responseTime": null,
+					"body": "{\n    \"isSuccess\": true,\n    \"message\": null,\n    \"executeTimeMs\": 222,\n    \"result\": [\n        {\n            \"id\": 1,\n            \"name\": \"INB01\",\n            \"applicationDesc\": \"UAT\",\n            \"staticPriority\": 0,\n            \"scheduleDesc\": null,\n            \"enable\": true,\n            \"totalAgent\": 0,\n            \"queueType\": null,\n            \"serviceStatus\": \"Unmanned\",\n            \"serviceTypeID\": 1,\n            \"serviceType\": \"[Resource]STYPE_Inbound\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"OB01\",\n            \"applicationDesc\": \"UAT\",\n            \"staticPriority\": 0,\n            \"scheduleDesc\": null,\n            \"enable\": true,\n            \"totalAgent\": 0,\n            \"queueType\": null,\n            \"serviceStatus\": \"Wait\",\n            \"serviceTypeID\": 4,\n            \"serviceType\": \"[Resource]STYPE_Outbound\"\n        },\n        {\n            \"id\": 273,\n            \"name\": \"TESTCREATE99\",\n            \"applicationDesc\": \"UAT\",\n            \"staticPriority\": 0,\n            \"scheduleDesc\": null,\n            \"enable\": true,\n            \"totalAgent\": 0,\n            \"queueType\": null,\n            \"serviceStatus\": \"Unmanned\",\n            \"serviceTypeID\": 1,\n            \"serviceType\": \"[Resource]STYPE_Inbound\"\n        }\n    ]\n}"
+				}
+			]
 		},
 		{
 			"name": "Get Workgroup Detail by WorkgroupId",
