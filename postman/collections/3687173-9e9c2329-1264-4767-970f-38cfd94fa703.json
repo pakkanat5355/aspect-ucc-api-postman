@@ -1510,7 +1510,84 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "3687173-e5df470d-d8a3-4cbd-88e6-9a122dff2ec1",
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "SessionID",
+								"value": "{{SessionID}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{Hostname}}/aspectucc/api/v1/asbrservicelist?serviceId=149,153,167,209,211,213,214,216,217,219,221,222,223,224,226,229,230",
+							"host": [
+								"{{Hostname}}"
+							],
+							"path": [
+								"aspectucc",
+								"api",
+								"v1",
+								"asbrservicelist"
+							],
+							"query": [
+								{
+									"key": "serviceId",
+									"value": "149,153,167,209,211,213,214,216,217,219,221,222,223,224,226,229,230"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 26 Jan 2026 18:51:24 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3436"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"isSuccess\": true,\n    \"message\": null,\n    \"executeTimeMs\": 52,\n    \"result\": [\n        {\n            \"id\": 149,\n            \"name\": \"NTL_SAS_INB_V888\",\n            \"applicationDesc\": \"NTL_SAS_LOAN\",\n            \"staticPriority\": 5,\n            \"scheduleDesc\": \"Test_CCS\",\n            \"enable\": true,\n            \"voiceIVRScriptDesc\": \"DYN_NTL_V1\",\n            \"totalAgent\": 2,\n            \"serviceStatus\": \"InActive\"\n        },\n        {\n            \"id\": 153,\n            \"name\": \"NTL_SAS_INB_INSURE_V1\",\n            \"applicationDesc\": \"NTL_SAS_INSURANCE\",\n            \"staticPriority\": 5,\n            \"scheduleDesc\": null,\n            \"enable\": true,\n            \"voiceIVRScriptDesc\": \"DYN_NTL_INSURE_V1\",\n            \"totalAgent\": 8,\n            \"serviceStatus\": \"Unmanned\"\n        },\n        {\n            \"id\": 167,\n            \"name\": \"DYN_INB_SOS\",\n            \"applicationDesc\": \"UAT\",\n            \"staticPriority\": 5,\n            \"scheduleDesc\": null,\n            \"enable\": true,\n            \"voiceIVRScriptDesc\": \"DYN_NTL_INSURE_V1\",\n            \"totalAgent\": 1,\n            \"serviceStatus\": \"Unmanned\"\n        },\n        {\n            \"id\": 209,\n            \"name\": \"INB_API02\",\n            \"applicationDesc\": \"NTL_SAS_LOAN\",\n            \"staticPriority\": 5,\n            \"scheduleDesc\": \"Test_CCS\",\n            \"enable\": true,\n            \"voiceIVRScriptDesc\": \"DYN_NTL_V1\",\n            \"totalAgent\": 2,\n            \"serviceStatus\": \"InActive\"\n        },\n        {\n            \"id\": 211,\n            \"name\": \"INB_API03\",\n            \"applicationDesc\": \"NTL_SAS_LOAN\",\n            \"staticPriority\": 5,\n            \"scheduleDesc\": \"Test_CCS\",\n            \"enable\": true,\n            \"voiceIVRScriptDesc\": \"DYN_NTL_V1\",\n            \"totalAgent\": 2,\n            \"serviceStatus\": \"InActive\"\n        },\n        {\n            \"id\": 213,\n            \"name\": \"INB_API04\",\n            \"applicationDesc\": \"NTL_SAS_LOAN\",\n            \"staticPriority\": 5,\n            \"scheduleDesc\": \"Test_CCS\",\n            \"enable\": true,\n            \"voiceIVRScriptDesc\": \"DYN_NTL_V1\",\n            \"totalAgent\": 2,\n            \"serviceStatus\": \"InActive\"\n        },\n        {\n            \"id\": 214,\n            \"name\": \"INB_API05\",\n            \"applicationDesc\": \"NTL_SAS_LOAN\",\n            \"staticPriority\": 5,\n            \"scheduleDesc\": \"Test_CCS\",\n            \"enable\": true,\n            \"voiceIVRScriptDesc\": \"DYN_NTL_V1\",\n            \"totalAgent\": 2,\n            \"serviceStatus\": \"InActive\"\n        },\n        {\n            \"id\": 216,\n            \"name\": \"INB_API06\",\n            \"applicationDesc\": \"NTL_SAS_LOAN\",\n            \"staticPriority\": 5,\n            \"scheduleDesc\": \"Test_CCS\",\n            \"enable\": true,\n            \"voiceIVRScriptDesc\": \"DYN_NTL_V1\",\n            \"totalAgent\": 2,\n            \"serviceStatus\": \"InActive\"\n        },\n        {\n            \"id\": 217,\n            \"name\": \"INB_API07\",\n            \"applicationDesc\": \"NTL_SAS_LOAN\",\n            \"staticPriority\": 5,\n            \"scheduleDesc\": \"Test_CCS\",\n            \"enable\": true,\n            \"voiceIVRScriptDesc\": \"DYN_NTL_V1\",\n            \"totalAgent\": 2,\n            \"serviceStatus\": \"InActive\"\n        },\n        {\n            \"id\": 219,\n            \"name\": \"INB_API08\",\n            \"applicationDesc\": \"NTL_SAS_LOAN\",\n            \"staticPriority\": 5,\n            \"scheduleDesc\": \"Test_CCS\",\n            \"enable\": true,\n            \"voiceIVRScriptDesc\": \"DYN_NTL_V1\",\n            \"totalAgent\": 2,\n            \"serviceStatus\": \"InActive\"\n        },\n        {\n            \"id\": 221,\n            \"name\": \"INB_API09\",\n            \"applicationDesc\": \"NTL_SAS_LOAN\",\n            \"staticPriority\": 5,\n            \"scheduleDesc\": \"Test_CCS\",\n            \"enable\": true,\n            \"voiceIVRScriptDesc\": \"DYN_NTL_V1\",\n            \"totalAgent\": 2,\n            \"serviceStatus\": \"InActive\"\n        },\n        {\n            \"id\": 222,\n            \"name\": \"INB_AP1\",\n            \"applicationDesc\": \"NTL_SAS_LOAN\",\n            \"staticPriority\": 5,\n            \"scheduleDesc\": \"Test_CCS\",\n            \"enable\": true,\n            \"voiceIVRScriptDesc\": \"DYN_NTL_V1\",\n            \"totalAgent\": 2,\n            \"serviceStatus\": \"InActive\"\n        },\n        {\n            \"id\": 223,\n            \"name\": \"INB_AP2\",\n            \"applicationDesc\": \"NTL_SAS_LOAN\",\n            \"staticPriority\": 5,\n            \"scheduleDesc\": \"Test_CCS\",\n            \"enable\": true,\n            \"voiceIVRScriptDesc\": \"DYN_NTL_V1\",\n            \"totalAgent\": 2,\n            \"serviceStatus\": \"InActive\"\n        },\n        {\n            \"id\": 224,\n            \"name\": \"INB_AP3\",\n            \"applicationDesc\": \"NTL_SAS_LOAN\",\n            \"staticPriority\": 5,\n            \"scheduleDesc\": \"Test_CCS\",\n            \"enable\": true,\n            \"voiceIVRScriptDesc\": \"DYN_NTL_V1\",\n            \"totalAgent\": 2,\n            \"serviceStatus\": \"InActive\"\n        },\n        {\n            \"id\": 226,\n            \"name\": \"INB_AP5\",\n            \"applicationDesc\": \"NTL_SAS_LOAN\",\n            \"staticPriority\": 5,\n            \"scheduleDesc\": \"Test_CCS\",\n            \"enable\": true,\n            \"voiceIVRScriptDesc\": \"DYN_NTL_V1\",\n            \"totalAgent\": 2,\n            \"serviceStatus\": \"InActive\"\n        },\n        {\n            \"id\": 229,\n            \"name\": \"INB_AP6\",\n            \"applicationDesc\": \"NTL_SAS_LOAN\",\n            \"staticPriority\": 5,\n            \"scheduleDesc\": \"Test_CCS\",\n            \"enable\": true,\n            \"voiceIVRScriptDesc\": \"DYN_NTL_V1\",\n            \"totalAgent\": 2,\n            \"serviceStatus\": \"InActive\"\n        },\n        {\n            \"id\": 230,\n            \"name\": \"INB_AP7\",\n            \"applicationDesc\": \"NTL_SAS_LOAN\",\n            \"staticPriority\": 5,\n            \"scheduleDesc\": \"Test_CCS\",\n            \"enable\": true,\n            \"voiceIVRScriptDesc\": \"DYN_NTL_V1\",\n            \"totalAgent\": 2,\n            \"serviceStatus\": \"InActive\"\n        }\n    ]\n}"
+				}
+			]
 		},
 		{
 			"name": "Update ASBR Service",
