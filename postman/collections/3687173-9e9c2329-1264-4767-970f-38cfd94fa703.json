@@ -523,7 +523,84 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "3687173-ccc61975-5f69-4e00-b4e6-71a3ac98cf48",
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "SessionID",
+								"value": "{{SessionID}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{Hostname}}/aspectucc/api/v1/acdservicelist?serviceId=273",
+							"host": [
+								"{{Hostname}}"
+							],
+							"path": [
+								"aspectucc",
+								"api",
+								"v1",
+								"acdservicelist"
+							],
+							"query": [
+								{
+									"key": "serviceId",
+									"value": "273"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 26 Jan 2026 18:50:54 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "241"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"isSuccess\": true,\n    \"message\": null,\n    \"executeTimeMs\": 38,\n    \"result\": [\n        {\n            \"id\": 273,\n            \"name\": \"TESTCREATE99\",\n            \"applicationDesc\": \"UAT\",\n            \"staticPriority\": 9,\n            \"scheduleDesc\": null,\n            \"enable\": true,\n            \"totalAgent\": 0,\n            \"queueType\": \"LongestIdle\",\n            \"serviceStatus\": \"Unmanned\"\n        }\n    ]\n}"
+				}
+			]
 		},
 		{
 			"name": "Get All Disposition Plan",
