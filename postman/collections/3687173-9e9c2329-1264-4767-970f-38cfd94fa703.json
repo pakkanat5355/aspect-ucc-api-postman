@@ -2730,7 +2730,7 @@
 			]
 		},
 		{
-			"name": "Get All Services",
+			"name": "Get Service List",
 			"id": "3687173-b742e9b3-b990-4ae5-8cbb-4062d22c5829",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -2745,7 +2745,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{Hostname}}/aspectucc/api/v1/servicelist?serviceId=273",
+					"raw": "{{Hostname}}/aspectucc/api/v1/servicelist?serviceId=273,1",
 					"host": [
 						"{{Hostname}}"
 					],
@@ -2758,7 +2758,7 @@
 					"query": [
 						{
 							"key": "serviceId",
-							"value": "273"
+							"value": "273,1"
 						}
 					]
 				}
