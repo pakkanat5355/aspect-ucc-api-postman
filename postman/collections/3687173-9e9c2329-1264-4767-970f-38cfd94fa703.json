@@ -1492,7 +1492,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{Hostname}}/aspectucc/api/v1/asbrservicelist?serviceId=149,153,167,209,211,213,214,216,217,219,221,222,223,224,226,229,230",
+					"raw": "{{Hostname}}/aspectucc/api/v1/asbrservicelist?userId=pakkanat.aru",
 					"host": [
 						"{{Hostname}}"
 					],
@@ -1504,8 +1504,8 @@
 					],
 					"query": [
 						{
-							"key": "serviceId",
-							"value": "149,153,167,209,211,213,214,216,217,219,221,222,223,224,226,229,230"
+							"key": "userId",
+							"value": "pakkanat.aru"
 						}
 					]
 				}
