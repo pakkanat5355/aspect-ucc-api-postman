@@ -3494,7 +3494,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{Hostname}}/aspectucc/api/v1/application?applicationId=1,2,3,4,5",
+					"raw": "{{Hostname}}/aspectucc/api/v1/application?userId=pakkanat.aru",
 					"host": [
 						"{{Hostname}}"
 					],
@@ -3506,8 +3506,8 @@
 					],
 					"query": [
 						{
-							"key": "applicationId",
-							"value": "1,2,3,4,5"
+							"key": "userId",
+							"value": "pakkanat.aru"
 						}
 					]
 				}
