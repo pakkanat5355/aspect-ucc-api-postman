@@ -505,7 +505,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{Hostname}}/aspectucc/api/v1/acdservicelist?serviceId=273",
+					"raw": "{{Hostname}}/aspectucc/api/v1/acdservicelist?userId=pakkanat.aru",
 					"host": [
 						"{{Hostname}}"
 					],
@@ -517,8 +517,8 @@
 					],
 					"query": [
 						{
-							"key": "serviceId",
-							"value": "273"
+							"key": "userId",
+							"value": "pakkanat.aru"
 						}
 					]
 				}
