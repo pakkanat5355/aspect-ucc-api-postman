@@ -4638,6 +4638,125 @@
 			]
 		},
 		{
+			"name": "Get Schedule Copy",
+			"id": "3687173-cb255f20-9b73-49be-abe9-57bba330baa3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "SessionID",
+						"value": "{{SessionID}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{Hostname}}/aspectucc/api/v1/schedule?scheduleId=1,2,3",
+					"host": [
+						"{{Hostname}}"
+					],
+					"path": [
+						"aspectucc",
+						"api",
+						"v1",
+						"schedule"
+					],
+					"query": [
+						{
+							"key": "scheduleId",
+							"value": "1,2,3"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "3687173-d08e6170-69f2-42c6-a9dc-3776a8437a57",
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "SessionID",
+								"value": "{0584c333-6f74-40a3-a1a4-b2bf01187b53}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:50959/aspectucc/api/v1/schedule?scheduleId=1,2,3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "50959",
+							"path": [
+								"aspectucc",
+								"api",
+								"v1",
+								"schedule"
+							],
+							"query": [
+								{
+									"key": "scheduleId",
+									"value": "1,2,3"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?RDpcVFJCX1NvdXJjZV9Db2RlXEFzcGVjdC1FbmhhbmNlbWVudFxBc3BlY3QtVUNDLVdlYkFQSVxBc3BlY3QtVUNDLVdlYkFQSVxhc3BlY3R1Y2NcYXBpXHYxXHNjaGVkdWxl?="
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 14 Apr 2025 17:13:15 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3875"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"isSuccess\": true,\n    \"message\": null,\n    \"executeTimeMs\": 121,\n    \"result\": [\n        {\n            \"id\": \"1\",\n            \"name\": \"Bgrimm_Mon-Sat_0830AM-0530PM\",\n            \"scheduleDetail\": [\n                {\n                    \"seq\": 1,\n                    \"dayOfWeekNo\": 6,\n                    \"dayOfWeek\": \"[Resource]WD_Saturday\",\n                    \"startHour\": 8,\n                    \"startMinute\": 30,\n                    \"stopHour\": 22,\n                    \"stopMinute\": 30\n                },\n                {\n                    \"seq\": 2,\n                    \"dayOfWeekNo\": 2,\n                    \"dayOfWeek\": \"[Resource]WD_Tuesday\",\n                    \"startHour\": 8,\n                    \"startMinute\": 30,\n                    \"stopHour\": 22,\n                    \"stopMinute\": 30\n                },\n                {\n                    \"seq\": 3,\n                    \"dayOfWeekNo\": 3,\n                    \"dayOfWeek\": \"[Resource]WD_Wednesday\",\n                    \"startHour\": 8,\n                    \"startMinute\": 30,\n                    \"stopHour\": 22,\n                    \"stopMinute\": 30\n                },\n                {\n                    \"seq\": 4,\n                    \"dayOfWeekNo\": 4,\n                    \"dayOfWeek\": \"[Resource]WD_Thursday\",\n                    \"startHour\": 8,\n                    \"startMinute\": 30,\n                    \"stopHour\": 22,\n                    \"stopMinute\": 30\n                },\n                {\n                    \"seq\": 5,\n                    \"dayOfWeekNo\": 5,\n                    \"dayOfWeek\": \"[Resource]WD_Friday\",\n                    \"startHour\": 8,\n                    \"startMinute\": 30,\n                    \"stopHour\": 22,\n                    \"stopMinute\": 30\n                },\n                {\n                    \"seq\": 6,\n                    \"dayOfWeekNo\": 1,\n                    \"dayOfWeek\": \"[Resource]WD_Monday\",\n                    \"startHour\": 8,\n                    \"startMinute\": 31,\n                    \"stopHour\": 22,\n                    \"stopMinute\": 30\n                }\n            ],\n            \"scheduleHoliday\": [\n                {\n                    \"holidayId\": 1,\n                    \"holidayDesc\": \"BGRIMM DAY OFF 6 April\",\n                    \"holidayDate\": \"2023-04-06T00:00:00.0000000\",\n                    \"isRecurring\": false\n                },\n                {\n                    \"holidayId\": 2,\n                    \"holidayDesc\": \"BGRIMM DAY OFF 13 April\",\n                    \"holidayDate\": \"2023-04-13T00:00:00.0000000\",\n                    \"isRecurring\": false\n                },\n                {\n                    \"holidayId\": 3,\n                    \"holidayDesc\": \"BGRIMM DAY OFF 14 April\",\n                    \"holidayDate\": \"2023-04-14T00:00:00.0000000\",\n                    \"isRecurring\": false\n                },\n                {\n                    \"holidayId\": 4,\n                    \"holidayDesc\": \"BGRIMM DAY OFF 1MAY\",\n                    \"holidayDate\": \"2023-05-01T00:00:00.0000000\",\n                    \"isRecurring\": false\n                },\n                {\n                    \"holidayId\": 5,\n                    \"holidayDesc\": \"BGRIMM DAY OFF 4MAY\",\n                    \"holidayDate\": \"2023-05-04T00:00:00.0000000\",\n                    \"isRecurring\": false\n                },\n                {\n                    \"holidayId\": 6,\n                    \"holidayDesc\": \"BGRIMM DAY OFF 5 JUNE\",\n                    \"holidayDate\": \"2023-06-05T00:00:00.0000000\",\n                    \"isRecurring\": false\n                },\n                {\n                    \"holidayId\": 7,\n                    \"holidayDesc\": \"BGRIMM DAY OFF 28July\",\n                    \"holidayDate\": \"2023-07-28T00:00:00.0000000\",\n                    \"isRecurring\": false\n                },\n                {\n                    \"holidayId\": 8,\n                    \"holidayDesc\": \"BGRIMM DAY OFF 1 AUG\",\n                    \"holidayDate\": \"2023-08-01T00:00:00.0000000\",\n                    \"isRecurring\": false\n                },\n                {\n                    \"holidayId\": 9,\n                    \"holidayDesc\": \"BGRIMM DAY OFF 2 AUG\",\n                    \"holidayDate\": \"2023-08-02T00:00:00.0000000\",\n                    \"isRecurring\": false\n                },\n                {\n                    \"holidayId\": 10,\n                    \"holidayDesc\": \"BGRIMM DAY OFF 14AUG\",\n                    \"holidayDate\": \"2023-08-14T00:00:00.0000000\",\n                    \"isRecurring\": false\n                },\n                {\n                    \"holidayId\": 11,\n                    \"holidayDesc\": \"BGRIMM DAY OFF 13SEP\",\n                    \"holidayDate\": \"2023-09-13T00:00:00.0000000\",\n                    \"isRecurring\": false\n                },\n                {\n                    \"holidayId\": 12,\n                    \"holidayDesc\": \"BGRIMM DAY OFF 23FEB\",\n                    \"holidayDate\": \"2023-09-23T00:00:00.0000000\",\n                    \"isRecurring\": false\n                },\n                {\n                    \"holidayId\": 13,\n                    \"holidayDesc\": \"BGRIMM DAY OFF 5DEC\",\n                    \"holidayDate\": \"2023-12-05T00:00:00.0000000\",\n                    \"isRecurring\": false\n                },\n                {\n                    \"holidayId\": 14,\n                    \"holidayDesc\": \"BGRIMM DAY OFF 11DEC\",\n                    \"holidayDate\": \"2023-12-11T00:00:00.0000000\",\n                    \"isRecurring\": false\n                }\n            ]\n        },\n        {\n            \"id\": \"2\",\n            \"name\": \"UAT\",\n            \"scheduleDetail\": [\n                {\n                    \"seq\": 6,\n                    \"dayOfWeekNo\": 1,\n                    \"dayOfWeek\": \"[Resource]WD_Monday\",\n                    \"startHour\": 9,\n                    \"startMinute\": 0,\n                    \"stopHour\": 19,\n                    \"stopMinute\": 0\n                },\n                {\n                    \"seq\": 7,\n                    \"dayOfWeekNo\": 2,\n                    \"dayOfWeek\": \"[Resource]WD_Tuesday\",\n                    \"startHour\": 9,\n                    \"startMinute\": 0,\n                    \"stopHour\": 19,\n                    \"stopMinute\": 0\n                },\n                {\n                    \"seq\": 8,\n                    \"dayOfWeekNo\": 3,\n                    \"dayOfWeek\": \"[Resource]WD_Wednesday\",\n                    \"startHour\": 9,\n                    \"startMinute\": 0,\n                    \"stopHour\": 19,\n                    \"stopMinute\": 0\n                },\n                {\n                    \"seq\": 9,\n                    \"dayOfWeekNo\": 4,\n                    \"dayOfWeek\": \"[Resource]WD_Thursday\",\n                    \"startHour\": 9,\n                    \"startMinute\": 0,\n                    \"stopHour\": 19,\n                    \"stopMinute\": 0\n                },\n                {\n                    \"seq\": 10,\n                    \"dayOfWeekNo\": 5,\n                    \"dayOfWeek\": \"[Resource]WD_Friday\",\n                    \"startHour\": 9,\n                    \"startMinute\": 0,\n                    \"stopHour\": 19,\n                    \"stopMinute\": 0\n                }\n            ],\n            \"scheduleHoliday\": []\n        },\n        {\n            \"id\": \"3\",\n            \"name\": \"Test_CCS\",\n            \"scheduleDetail\": [\n                {\n                    \"seq\": 8,\n                    \"dayOfWeekNo\": 1,\n                    \"dayOfWeek\": \"[Resource]WD_Monday\",\n                    \"startHour\": 9,\n                    \"startMinute\": 0,\n                    \"stopHour\": 18,\n                    \"stopMinute\": 0\n                },\n                {\n                    \"seq\": 9,\n                    \"dayOfWeekNo\": 2,\n                    \"dayOfWeek\": \"[Resource]WD_Tuesday\",\n                    \"startHour\": 9,\n                    \"startMinute\": 0,\n                    \"stopHour\": 18,\n                    \"stopMinute\": 0\n                },\n                {\n                    \"seq\": 10,\n                    \"dayOfWeekNo\": 3,\n                    \"dayOfWeek\": \"[Resource]WD_Wednesday\",\n                    \"startHour\": 9,\n                    \"startMinute\": 0,\n                    \"stopHour\": 18,\n                    \"stopMinute\": 0\n                },\n                {\n                    \"seq\": 11,\n                    \"dayOfWeekNo\": 4,\n                    \"dayOfWeek\": \"[Resource]WD_Thursday\",\n                    \"startHour\": 9,\n                    \"startMinute\": 0,\n                    \"stopHour\": 18,\n                    \"stopMinute\": 0\n                },\n                {\n                    \"seq\": 12,\n                    \"dayOfWeekNo\": 5,\n                    \"dayOfWeek\": \"[Resource]WD_Friday\",\n                    \"startHour\": 9,\n                    \"startMinute\": 0,\n                    \"stopHour\": 18,\n                    \"stopMinute\": 0\n                }\n            ],\n            \"scheduleHoliday\": []\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
 			"name": "Get Holiday",
 			"id": "3687173-a7b439bd-662d-4fbe-bcf6-95fff248ac2f",
 			"protocolProfileBehavior": {
