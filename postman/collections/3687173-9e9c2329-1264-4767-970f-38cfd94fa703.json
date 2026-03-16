@@ -4653,7 +4653,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{Hostname}}/aspectucc/api/v1/schedulelist?userId=pakkanat.aru",
+					"raw": "{{Hostname}}/aspectucc/api/v1/schedulelist",
 					"host": [
 						"{{Hostname}}"
 					],
@@ -4662,12 +4662,6 @@
 						"api",
 						"v1",
 						"schedulelist"
-					],
-					"query": [
-						{
-							"key": "userId",
-							"value": "pakkanat.aru"
-						}
 					]
 				}
 			},
@@ -4876,7 +4870,7 @@
 			]
 		},
 		{
-			"name": "Get Holiday Copy",
+			"name": "Get Holiday List",
 			"id": "3687173-d0197bb5-08a9-4320-81d9-b23dda9d14bc",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -4891,7 +4885,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{Hostname}}/aspectucc/api/v1/holiday?holidayId=1",
+					"raw": "{{Hostname}}/aspectucc/api/v1/holidaylist",
 					"host": [
 						"{{Hostname}}"
 					],
@@ -4899,13 +4893,7 @@
 						"aspectucc",
 						"api",
 						"v1",
-						"holiday"
-					],
-					"query": [
-						{
-							"key": "holidayId",
-							"value": "1"
-						}
+						"holidaylist"
 					]
 				}
 			},
