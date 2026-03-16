@@ -3227,7 +3227,94 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "3687173-5eaab841-7450-4e10-a1c9-c51981e25a76",
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "SessionID",
+								"value": "{{SessionID}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{Hostname}}/aspectucc/api/v1/workgrouplist?userId=pakkanat.aru",
+							"host": [
+								"{{Hostname}}"
+							],
+							"path": [
+								"aspectucc",
+								"api",
+								"v1",
+								"workgrouplist"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "pakkanat.aru"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?RDpcVEJOX1NvdXJjZV9Db2RlXEFzcGVjdC1FbmhhbmNlbWVudFxBc3BlY3QtVUNDLVdlYkFQSVxBc3BlY3QtVUNDLVdlYkFQSVxhc3BlY3R1Y2NcYXBpXHYxXHdvcmtncm91cGxpc3Q=?="
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 16 Mar 2026 03:35:30 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "6336"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"responseTime": null,
+					"body": "{\n    \"isSuccess\": true,\n    \"message\": null,\n    \"executeTimeMs\": 66,\n    \"result\": [\n        {\n            \"id\": \"1\",\n            \"syntheticID\": \"5c5b90f0-cdbc-44d3-abfd-24db0ca73768\",\n            \"name\": \"ADMIN\",\n            \"totalAgents\": 0,\n            \"teamOwner\": \"llusr\",\n            \"isManualAccept\": true,\n            \"isGoNotReadyIfReject\": false,\n            \"isEnterNotReadyState\": false,\n            \"notReadyTimeoutSec\": 0,\n            \"isEnableMultiLine\": true,\n            \"agentWorkgroups\": null,\n            \"agentStatusReasons\": null\n        },\n        {\n            \"id\": \"2\",\n            \"syntheticID\": \"2c10c7e5-9808-4dd8-a09b-4981931f71ce\",\n            \"name\": \"zUAT\",\n            \"totalAgents\": 0,\n            \"teamOwner\": \"llusr\",\n            \"isManualAccept\": true,\n            \"isGoNotReadyIfReject\": false,\n            \"isEnterNotReadyState\": true,\n            \"notReadyTimeoutSec\": 0,\n            \"isEnableMultiLine\": false,\n            \"agentWorkgroups\": null,\n            \"agentStatusReasons\": null\n        },\n        {\n            \"id\": \"3\",\n            \"syntheticID\": \"f1c3e1d2-df02-44e5-84aa-aec1513df111\",\n            \"name\": \"Tleasing_Team_A\",\n            \"totalAgents\": 0,\n            \"teamOwner\": \"tichakornrew\",\n            \"isManualAccept\": false,\n            \"isGoNotReadyIfReject\": true,\n            \"isEnterNotReadyState\": true,\n            \"notReadyTimeoutSec\": 15,\n            \"isEnableMultiLine\": true,\n            \"agentWorkgroups\": null,\n            \"agentStatusReasons\": null\n        },\n        {\n            \"id\": \"4\",\n            \"syntheticID\": \"ef727d24-f69e-4115-bbad-87226468f5dc\",\n            \"name\": \"Tleasing_Team_B\",\n            \"totalAgents\": 0,\n            \"teamOwner\": \"tichakornrew\",\n            \"isManualAccept\": false,\n            \"isGoNotReadyIfReject\": true,\n            \"isEnterNotReadyState\": true,\n            \"notReadyTimeoutSec\": 15,\n            \"isEnableMultiLine\": true,\n            \"agentWorkgroups\": null,\n            \"agentStatusReasons\": null\n        },\n        {\n            \"id\": \"5\",\n            \"syntheticID\": \"b52640f3-642c-41e9-9bc1-14b75015713a\",\n            \"name\": \"OSS_DEV\",\n            \"totalAgents\": 0,\n            \"teamOwner\": \"llusr\",\n            \"isManualAccept\": false,\n            \"isGoNotReadyIfReject\": false,\n            \"isEnterNotReadyState\": false,\n            \"notReadyTimeoutSec\": 15,\n            \"isEnableMultiLine\": true,\n            \"agentWorkgroups\": null,\n            \"agentStatusReasons\": null\n        },\n        {\n            \"id\": \"6\",\n            \"syntheticID\": \"9bdfe4f4-c4be-446c-98d7-798fbe0c463f\",\n            \"name\": \"CHUBB\",\n            \"totalAgents\": 0,\n            \"teamOwner\": \"llusr\",\n            \"isManualAccept\": false,\n            \"isGoNotReadyIfReject\": true,\n            \"isEnterNotReadyState\": true,\n            \"notReadyTimeoutSec\": 15,\n            \"isEnableMultiLine\": true,\n            \"agentWorkgroups\": null,\n            \"agentStatusReasons\": null\n        },\n        {\n            \"id\": \"7\",\n            \"syntheticID\": \"b86b18e8-2be2-4bc6-b6ac-5841088efa13\",\n            \"name\": \"Auto_Answer\",\n            \"totalAgents\": 0,\n            \"teamOwner\": \"llusr\",\n            \"isManualAccept\": true,\n            \"isGoNotReadyIfReject\": false,\n            \"isEnterNotReadyState\": true,\n            \"notReadyTimeoutSec\": 0,\n            \"isEnableMultiLine\": true,\n            \"agentWorkgroups\": null,\n            \"agentStatusReasons\": null\n        },\n        {\n            \"id\": \"8\",\n            \"syntheticID\": \"5be313ed-60db-43a0-ab87-71ef548cbc5f\",\n            \"name\": \"POC_Manual\",\n            \"totalAgents\": 0,\n            \"teamOwner\": \"tichakornrew\",\n            \"isManualAccept\": false,\n            \"isGoNotReadyIfReject\": true,\n            \"isEnterNotReadyState\": true,\n            \"notReadyTimeoutSec\": 15,\n            \"isEnableMultiLine\": true,\n            \"agentWorkgroups\": null,\n            \"agentStatusReasons\": null\n        },\n        {\n            \"id\": \"9\",\n            \"syntheticID\": \"4820cf51-a217-4029-85de-a8a3051723c4\",\n            \"name\": \"POC_KBAO\",\n            \"totalAgents\": 0,\n            \"teamOwner\": \"tichakornrew\",\n            \"isManualAccept\": false,\n            \"isGoNotReadyIfReject\": true,\n            \"isEnterNotReadyState\": true,\n            \"notReadyTimeoutSec\": 15,\n            \"isEnableMultiLine\": true,\n            \"agentWorkgroups\": null,\n            \"agentStatusReasons\": null\n        },\n        {\n            \"id\": \"10\",\n            \"syntheticID\": \"bee7784f-fe01-4b9a-bc99-2d8670c06f3d\",\n            \"name\": \"SUP_POC_KBAO\",\n            \"totalAgents\": 0,\n            \"teamOwner\": \"tichakornrew\",\n            \"isManualAccept\": false,\n            \"isGoNotReadyIfReject\": true,\n            \"isEnterNotReadyState\": true,\n            \"notReadyTimeoutSec\": 15,\n            \"isEnableMultiLine\": true,\n            \"agentWorkgroups\": null,\n            \"agentStatusReasons\": null\n        },\n        {\n            \"id\": \"11\",\n            \"syntheticID\": \"10b63924-1bdf-47ff-9bf7-754225364a87\",\n            \"name\": \"ISDLAB\",\n            \"totalAgents\": 0,\n            \"teamOwner\": \"llusr\",\n            \"isManualAccept\": false,\n            \"isGoNotReadyIfReject\": true,\n            \"isEnterNotReadyState\": true,\n            \"notReadyTimeoutSec\": 15,\n            \"isEnableMultiLine\": true,\n            \"agentWorkgroups\": null,\n            \"agentStatusReasons\": null\n        },\n        {\n            \"id\": \"13\",\n            \"syntheticID\": \"9c160c6e-166f-411f-ac14-294c8ea77d68\",\n            \"name\": \"CG_TSR\",\n            \"totalAgents\": 0,\n            \"teamOwner\": \"llusr\",\n            \"isManualAccept\": false,\n            \"isGoNotReadyIfReject\": true,\n            \"isEnterNotReadyState\": true,\n            \"notReadyTimeoutSec\": 15,\n            \"isEnableMultiLine\": true,\n            \"agentWorkgroups\": null,\n            \"agentStatusReasons\": null\n        },\n        {\n            \"id\": \"17\",\n            \"syntheticID\": \"0d296a79-e29b-4e9c-9f0a-bafd85181f57\",\n            \"name\": \"TPB_Agent\",\n            \"totalAgents\": 0,\n            \"teamOwner\": \"llusr\",\n            \"isManualAccept\": false,\n            \"isGoNotReadyIfReject\": true,\n            \"isEnterNotReadyState\": true,\n            \"notReadyTimeoutSec\": 15,\n            \"isEnableMultiLine\": true,\n            \"agentWorkgroups\": null,\n            \"agentStatusReasons\": null\n        },\n        {\n            \"id\": \"19\",\n            \"syntheticID\": \"1aa24648-d4dc-4989-811a-007f3efaff4a\",\n            \"name\": \"Demo\",\n            \"totalAgents\": 0,\n            \"teamOwner\": \"llusr\",\n            \"isManualAccept\": false,\n            \"isGoNotReadyIfReject\": true,\n            \"isEnterNotReadyState\": true,\n            \"notReadyTimeoutSec\": 15,\n            \"isEnableMultiLine\": true,\n            \"agentWorkgroups\": null,\n            \"agentStatusReasons\": null\n        },\n        {\n            \"id\": \"20\",\n            \"syntheticID\": \"de689ffe-4110-4aee-a7f4-f32f421d1582\",\n            \"name\": \"ABC|SupName|SupCode\",\n            \"totalAgents\": 0,\n            \"teamOwner\": \"pakkanataru\",\n            \"isManualAccept\": false,\n            \"isGoNotReadyIfReject\": true,\n            \"isEnterNotReadyState\": false,\n            \"notReadyTimeoutSec\": 15,\n            \"isEnableMultiLine\": true,\n            \"agentWorkgroups\": null,\n            \"agentStatusReasons\": null\n        },\n        {\n            \"id\": \"22\",\n            \"syntheticID\": \"919f1624-8d69-4ffe-99db-0cabf11682b8\",\n            \"name\": \"CG_MG\",\n            \"totalAgents\": 0,\n            \"teamOwner\": \"llusr\",\n            \"isManualAccept\": false,\n            \"isGoNotReadyIfReject\": true,\n            \"isEnterNotReadyState\": true,\n            \"notReadyTimeoutSec\": 15,\n            \"isEnableMultiLine\": true,\n            \"agentWorkgroups\": null,\n            \"agentStatusReasons\": null\n        },\n        {\n            \"id\": \"23\",\n            \"syntheticID\": \"46799f96-4520-48b1-bd1a-3c639b73148c\",\n            \"name\": \"Test1\",\n            \"totalAgents\": 0,\n            \"teamOwner\": \"llusr\",\n            \"isManualAccept\": false,\n            \"isGoNotReadyIfReject\": true,\n            \"isEnterNotReadyState\": true,\n            \"notReadyTimeoutSec\": 15,\n            \"isEnableMultiLine\": false,\n            \"agentWorkgroups\": null,\n            \"agentStatusReasons\": null\n        },\n        {\n            \"id\": \"27\",\n            \"syntheticID\": \"e3fd98d9-9cf3-44be-a65d-6dc242365b9f\",\n            \"name\": \"FWD_TSR\",\n            \"totalAgents\": 0,\n            \"teamOwner\": \"UIPInstall\",\n            \"isManualAccept\": true,\n            \"isGoNotReadyIfReject\": false,\n            \"isEnterNotReadyState\": true,\n            \"notReadyTimeoutSec\": 0,\n            \"isEnableMultiLine\": true,\n            \"agentWorkgroups\": null,\n            \"agentStatusReasons\": null\n        },\n        {\n            \"id\": \"29\",\n            \"syntheticID\": \"260d40c0-73d2-4589-9dfc-83fa1d0b4326\",\n            \"name\": \"ABC_Inhouse\",\n            \"totalAgents\": 0,\n            \"teamOwner\": \"vpnpoc01\",\n            \"isManualAccept\": false,\n            \"isGoNotReadyIfReject\": true,\n            \"isEnterNotReadyState\": true,\n            \"notReadyTimeoutSec\": 15,\n            \"isEnableMultiLine\": true,\n            \"agentWorkgroups\": null,\n            \"agentStatusReasons\": null\n        },\n        {\n            \"id\": \"30\",\n            \"syntheticID\": \"a31ad786-36e0-43b1-a574-6369d684d1e1\",\n            \"name\": \"zUAT_Resign\",\n            \"totalAgents\": 0,\n            \"teamOwner\": \"llusr\",\n            \"isManualAccept\": false,\n            \"isGoNotReadyIfReject\": true,\n            \"isEnterNotReadyState\": true,\n            \"notReadyTimeoutSec\": 15,\n            \"isEnableMultiLine\": true,\n            \"agentWorkgroups\": null,\n            \"agentStatusReasons\": null\n        },\n        {\n            \"id\": \"31\",\n            \"syntheticID\": \"a828ec16-027f-4d2b-86ae-7b7d4c17ab89\",\n            \"name\": \"Thailife\",\n            \"totalAgents\": 0,\n            \"teamOwner\": \"llusr\",\n            \"isManualAccept\": true,\n            \"isGoNotReadyIfReject\": false,\n            \"isEnterNotReadyState\": false,\n            \"notReadyTimeoutSec\": 0,\n            \"isEnableMultiLine\": true,\n            \"agentWorkgroups\": null,\n            \"agentStatusReasons\": null\n        }\n    ]\n}"
+				}
+			]
 		},
 		{
 			"name": "Update Workgroup",
