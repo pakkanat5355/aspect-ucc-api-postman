@@ -3092,7 +3092,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{Hostname}}/aspectucc/api/v1/workgroup?workgroupId=1",
+					"raw": "{{Hostname}}/aspectucc/api/v1/workgroup?userId=pakkanat.aru",
 					"host": [
 						"{{Hostname}}"
 					],
@@ -3104,8 +3104,8 @@
 					],
 					"query": [
 						{
-							"key": "workgroupId",
-							"value": "1"
+							"key": "userId",
+							"value": "pakkanat.aru"
 						}
 					]
 				}
