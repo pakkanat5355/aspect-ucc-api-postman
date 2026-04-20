@@ -20,7 +20,8 @@
 							"pm.environment.set(\"SessionID\", response.sessionId);"
 						],
 						"type": "text/javascript",
-						"packages": {}
+						"packages": {},
+						"requests": {}
 					}
 				}
 			],
@@ -33,7 +34,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"username\":\"pakkanat.aru\",\r\n    \"password\":\"Bank1234\"\r\n}",
+					"raw": "{\r\n    \"username\":\"pakkanat.aru\",\r\n    \"password\":\"Bank1234\",\r\n    \"force\":true\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
