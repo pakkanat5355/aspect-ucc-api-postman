@@ -7021,6 +7021,36 @@
 			"response": []
 		},
 		{
+			"name": "Get Dial Mode New",
+			"id": "3687173-36c164b7-55ab-49f8-9fd5-41f902a4bc9d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "SessionID",
+						"value": "{{SessionID}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{Hostname}}/aspectucc/api/v1/dialmode",
+					"host": [
+						"{{Hostname}}"
+					],
+					"path": [
+						"aspectucc",
+						"api",
+						"v1",
+						"dialmode"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "xml create acd service ok",
 			"id": "3687173-d78e48db-b413-4936-aa77-e5e4de85ebcb",
 			"protocolProfileBehavior": {
