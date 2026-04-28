@@ -7051,6 +7051,36 @@
 			"response": []
 		},
 		{
+			"name": "Get ASBR IVR Script",
+			"id": "3687173-2120ca1c-ea4f-4704-9b3c-3ea65702d0c0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "SessionID",
+						"value": "{{SessionID}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{Hostname}}/aspectucc/api/v1/asbrivrscript",
+					"host": [
+						"{{Hostname}}"
+					],
+					"path": [
+						"aspectucc",
+						"api",
+						"v1",
+						"asbrivrscript"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "xml create acd service ok",
 			"id": "3687173-d78e48db-b413-4936-aa77-e5e4de85ebcb",
 			"protocolProfileBehavior": {
