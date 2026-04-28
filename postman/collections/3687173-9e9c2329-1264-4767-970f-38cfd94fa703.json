@@ -6991,6 +6991,36 @@
 			]
 		},
 		{
+			"name": "Get Outbound Feed Type... NEW Copy",
+			"id": "3687173-9e21450d-89c8-472f-b4d0-a68b27790d8d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "SessionID",
+						"value": "{{SessionID}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{Hostname}}/aspectucc/api/v1/outboundfeedtype",
+					"host": [
+						"{{Hostname}}"
+					],
+					"path": [
+						"aspectucc",
+						"api",
+						"v1",
+						"outboundfeedtype"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "xml create acd service ok",
 			"id": "3687173-d78e48db-b413-4936-aa77-e5e4de85ebcb",
 			"protocolProfileBehavior": {
