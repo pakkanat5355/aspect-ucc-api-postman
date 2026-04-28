@@ -6991,7 +6991,7 @@
 			]
 		},
 		{
-			"name": "Get Outbound Feed Type... NEW Copy",
+			"name": "Get Detect Type... NEW",
 			"id": "3687173-9e21450d-89c8-472f-b4d0-a68b27790d8d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -7006,7 +7006,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{Hostname}}/aspectucc/api/v1/outboundfeedtype",
+					"raw": "{{Hostname}}/aspectucc/api/v1/detecttype",
 					"host": [
 						"{{Hostname}}"
 					],
@@ -7014,7 +7014,7 @@
 						"aspectucc",
 						"api",
 						"v1",
-						"outboundfeedtype"
+						"detecttype"
 					]
 				}
 			},
